@@ -4,30 +4,21 @@
     <meta charset="utf-8" />
     <!--RWD-->
     <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-    <!--boostrap css-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--boostrap jquery-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--boostrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--boostrap js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!--css-->
     <link href="GreenPet.css" rel="stylesheet" />
-    <!--icon-->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <title></title>
-    <style>
-        .formBorder {
-            margin-top: 60px;
-            border-radius: 5px;
-            background-color: #d2d2d2;
-        }
-    </style>
 </head>
 <body>
     <div class="col-12">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="height:50px;">
-            <a class="navbar-brand" href="#">管理者介面</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-height">
+            <a class="navbar-brand ml-1" href="#">管理者介面</a>
             <ul class="navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">網站</a>
@@ -36,41 +27,101 @@
                     <a class="nav-link" href="#">綠寵物</a>
                 </li>
             </ul>
-            <a class="nav-link ml-lg-auto text-light" href="#" style="padding-left:0px; padding-right:0px;">登出</a>
+            <a class="nav-link ml-lg-auto text-light mr-1" href="#">登出</a>
         </nav>
     </div>
     <div class="col-12">
-        <div class="formBorder">
-            <div class="col-12" style="padding: 5px;">
+        <div class="gray-border">
+            <div class="col-12 p-1">
                 <a>網站 &#62; 交易紀錄</a>
             </div>
         </div>
     </div>
-    <div class="col-12" style="height:30px;">
-        <div class="col-12" style="padding:5px;">
-            <button type="button" class="btn btn-primary mx-2" style="float:right; border-radius:10px;">修改</button>
-            <input type="number" class="form-control mx-2" style="width:50px;float:right;" value="3">
-            <p class="mx-2" style="float:right; text-align:center; margin-top:5px;">抵達時間提早N天信箱提醒：</p>
-        </div>
-    </div>
-    <div class="container" style="margin-bottom:1%;">
-        <div class="row" style="margin-top:2%;text-align:center">
-            <div class="col-3">
-                <button type="button" class="btn btn-block btn-primary" style="border-radius:10px;">恢復顯示</button>
-            </div>
-            <div class="col-3">
-                <button type="button" class="btn btn-block  btn-success" style="border-radius:10px;">交易完成</button>
-            </div>
-            <div class="col-3">
-                <button type="button" class="btn btn-block  btn-info" style="border-radius:10px;">尚未完成</button>
-            </div>
-            <div class="col-3">
-                <button type="button" class="btn btn-block  btn-danger" style="border-radius:10px;">取消</button>
-            </div>
-        </div>
-    </div>
     <div class="col-12">
-        123
+        <div class="row">
+            <div class="col-12 p-2">
+                <button type="button" class="btn mx-2 update-btn">修改</button>
+                <input class="form-control mx-2 update-input" value="3">
+                <div class="mx-2 text-center mt-2 update-text">抵達時間提早N天信箱提醒：</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-4" >
+            <div class="div-center">
+                <button type="button" class="btn my-1 mx-2 btn-blue-lg">恢復顯示</button>
+                <button type="button" class="btn my-1 mx-2 btn-green-lg">交易完成</button>
+                <button type="button" class="btn my-1 mx-2 btn-orange-lg">尚未完成</button>
+                <button type="button" class="btn my-1 mx-2 btn-red-lg">取消</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 tb-padding" >
+        <table class="table">
+            <thead class="thead-dark">
+                <tr class="text-center">
+                    <th scope="col">訂單編號</th>
+                    <th scope="col">會員編號</th>
+                    <th scope="col">商品</th>
+                    <th scope="col">交易狀態</th>
+                    <th scope="col">訂購時間</th>
+                    <th scope="col">抵達時間</th>
+                    <th scope="col">功能</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center text-middle">
+                    <td>ORDER-000001</td>
+                    <td>132503131</td>
+                    <td>
+                        <button class="btn btn-primary btn-blue-md">顯示</button>
+                    </td>
+                    <td class="text-success">交易成功</td>
+                    <td>
+                        <div>2017-12-22</div>
+                        <div>13.25.123</div>
+                    </td>
+                    <td>2017-12-22</td>
+                    <td>
+                        <button class="btn btn-green-sm">已出貨</button>
+                        <button class="btn btn-red-sm">刪除</button>
+                    </td>
+                </tr>
+                <tr class="text-center text-middle">
+                    <td>ORDER-000002</td>
+                    <td>31215123</td>
+                    <td>
+                        <button class="btn btn-primary btn-blue-md">顯示</button>
+                    </td>
+                    <td class="text-danger">交易失敗</td>
+                    <td>
+                        <div>2017-12-22</div>
+                        <div>13.25.123</div>
+                    </td>
+                    <td>2017-12-22</td>
+                    <td>
+                        <button class="btn btn-blue-sm">通知出貨</button>
+                        <button class="btn btn-red-sm">刪除</button>
+                    </td>
+                </tr>
+                <tr class="text-center text-middle">
+                    <td>ORDER-000002</td>
+                    <td>31215123</td>
+                    <td>
+                        <button class="btn btn-primary btn-blue-md">顯示</button>
+                    </td>
+                    <td class="text-muted">處理中</td>
+                    <td>
+                        <div>2017-12-22</div>
+                        <div>13.25.123</div>
+                    </td>
+                    <td>2017-12-22</td>
+                    <td>
+                        <div class="text-muted">處理中</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
