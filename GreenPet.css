@@ -77,6 +77,11 @@
     background-color: #337ab7;
     color: white;
 }
+.btn-purple-sm {
+    width: 90px;
+    background-color: #9370DB;
+    color: white;
+}
 
 .navbar-height {
     height: 50px;
@@ -88,4 +93,29 @@
 
 .div-center {
     margin: 0 auto;
+}
+
+.color-b {
+    background-color: #337ab7;
+}
+.color-g {
+    background-color: #5cb85c;
+}
+.color-r {
+    background-color: #d9534f;
+}
+
+.float-r {
+    float:right;
+}
+
+.input-likeformcontrol {
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
 }
