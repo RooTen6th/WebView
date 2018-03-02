@@ -11,6 +11,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!--css-->
     <link href="GreenPet.css" rel="stylesheet" />
+    <!--ico-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <title></title>
 </head>
 <body>
@@ -36,11 +38,15 @@
         </div>
     </div>
     <div class="col-12" style="margin-top:2%; height:400px;">
-        <div class="container " style="overflow: auto; height:360px;">
+        <div class="container " style="overflow-y:scroll; height:360px;">
             <table class="table table-hover table-bordered">
                 <thead class="thead-dark">
                     <tr class="text-center text-middle">
-                        <th scope="col">時間</th>
+                        <th scope="col">時間
+                            <a href="">
+                                <i class="fas fa-sort-down fa-lg text-light" style="padding-bottom:5px;"></i>
+                            </a>
+                        </th>
                         <th scope="col">標題</th>
                         <th scope="col">觀看人數</th>
                         <th scope="col">功能</th>
@@ -161,7 +167,7 @@
     </div>
     <div class="col-12">
         <div class="container  border-top border-secondary ">
-            <div class="row"  style="margin-top:2%;">
+            <div class="row" style="margin-top:2%;">
                 <div class="col-2"></div>
                 <div class="col-8 text-center row">
                     <div class="ml-5">

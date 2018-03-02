@@ -12,6 +12,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!--css-->
     <link href="GreenPet.css" rel="stylesheet" />
+    <style>
+        tbody {
+            display: block;
+            height: 360px;
+            overflow: auto;
+        }
+
+            thead, tbody tr {
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+            }
+
+        thead {
+            width: calc( 100% - 1em )
+        }
+
+    </style>
 </head>
 <body>
     <div class="col-12">
@@ -35,11 +53,11 @@
             </div>
         </div>
     </div>
-    <div class="col-12" style="margin-top:2%; height:400px;">
-        <div class="container " style="overflow-y:scroll; height:360px;">
+    <div class="col-12" style="margin-bottom: 20px;">
+        <div class="container" style="border-bottom:3px solid black;">
             <table class="table table-hover table-bordered">
                 <thead class="thead-dark">
-                    <tr class="text-center text-middle">
+                    <tr class="text-middle">
                         <th scope="col">
                             時間
                             <a href="">
@@ -53,7 +71,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="text-center text-middle">
+                    <tr class="text-middle">
                         <td>
                             <span>
                                 2017-01-11
@@ -72,7 +90,121 @@
                             <button type="button" class="btn btn-red-sm">刪除</button>
                         </td>
                     </tr>
-                    <tr class="text-center text-middle">
+                    <tr class="text-middle">
+                        <td>
+                            <span>
+                                2015-12-21
+                            </span>
+                            <span>
+                                18:11.644
+                            </span>
+                        </td>
+                        <td>VVVV</td>
+                        <td>
+                            <button type="button" class="btn btn-blue-lg">顯示檔期</button>
+                        </td>
+                        <td>3000</td>
+                        <td>
+                            <button type="button" class="btn btn-green-sm">修改</button>
+                            <button type="button" class="btn btn-red-sm">刪除</button>
+                        </td>
+                    </tr>
+                    <tr class="text-middle">
+                        <td>
+                            <span>
+                                2015-12-21
+                            </span>
+                            <span>
+                                18:11.644
+                            </span>
+                        </td>
+                        <td>VVVV</td>
+                        <td>
+                            <button type="button" class="btn btn-blue-lg">顯示檔期</button>
+                        </td>
+                        <td>3000</td>
+                        <td>
+                            <button type="button" class="btn btn-green-sm">修改</button>
+                            <button type="button" class="btn btn-red-sm">刪除</button>
+                        </td>
+                    </tr>
+                    <tr class="text-middle">
+                        <td>
+                            <span>
+                                2015-12-21
+                            </span>
+                            <span>
+                                18:11.644
+                            </span>
+                        </td>
+                        <td>VVVV</td>
+                        <td>
+                            <button type="button" class="btn btn-blue-lg">顯示檔期</button>
+                        </td>
+                        <td>3000</td>
+                        <td>
+                            <button type="button" class="btn btn-green-sm">修改</button>
+                            <button type="button" class="btn btn-red-sm">刪除</button>
+                        </td>
+                    </tr>
+                    <tr class="text-middle">
+                        <td>
+                            <span>
+                                2015-12-21
+                            </span>
+                            <span>
+                                18:11.644
+                            </span>
+                        </td>
+                        <td>VVVV</td>
+                        <td>
+                            <button type="button" class="btn btn-blue-lg">顯示檔期</button>
+                        </td>
+                        <td>3000</td>
+                        <td>
+                            <button type="button" class="btn btn-green-sm">修改</button>
+                            <button type="button" class="btn btn-red-sm">刪除</button>
+                        </td>
+                    </tr>
+                    <tr class="text-middle">
+                        <td>
+                            <span>
+                                2015-12-21
+                            </span>
+                            <span>
+                                18:11.644
+                            </span>
+                        </td>
+                        <td>VVVV</td>
+                        <td>
+                            <button type="button" class="btn btn-blue-lg">顯示檔期</button>
+                        </td>
+                        <td>3000</td>
+                        <td>
+                            <button type="button" class="btn btn-green-sm">修改</button>
+                            <button type="button" class="btn btn-red-sm">刪除</button>
+                        </td>
+                    </tr>
+                    <tr class="text-middle">
+                        <td>
+                            <span>
+                                2015-12-21
+                            </span>
+                            <span>
+                                18:11.644
+                            </span>
+                        </td>
+                        <td>VVVV</td>
+                        <td>
+                            <button type="button" class="btn btn-blue-lg">顯示檔期</button>
+                        </td>
+                        <td>3000</td>
+                        <td>
+                            <button type="button" class="btn btn-green-sm">修改</button>
+                            <button type="button" class="btn btn-red-sm">刪除</button>
+                        </td>
+                    </tr>
+                    <tr class="text-middle">
                         <td>
                             <span>
                                 2015-12-21
@@ -95,60 +227,87 @@
             </table>
         </div>
     </div>
-    <div class="col-12">
-        <div class="container  border-top border-secondary ">
-            <div class="row" style="margin-top:2%;">
-                <div class="col-1"></div>
-                <div class="col-5" style="margin-left:15px;">
-                    <span class="h5" style="vertical-align: middle;">標題：</span>
-                    <input type="text" class="input-likeformcontrol" value="AAA" style="width:350px;vertical-align: middle;" />
-                </div>
-                <div class="col-5" style="margin-left:21px;">
-                    <span class="h5" style="vertical-align: middle; ">圖片：</span>
-                    <button type="button" class="btn" style="width:250px; background-color:#C0C0C0; vertical-align: middle;">選擇檔案</button>
-                </div>
-                <div class="col-1"></div>
-            </div>
-        </div>
-    </div>
-    <div class="col-12">
-        <div class="container">
-            <div class="row" style="margin-top:2%;">
-                <div class="col-1"></div>
-                <div class="col-5" style="margin-left:-25px; padding-right:0px;">
-                    <span class="h5" style="vertical-align: middle;">課程檔期：</span>
-                    <input type="text" class="input-likeformcontrol" value="AAA" style="width:350px;vertical-align: middle;" />
-                </div>
-                <div class="col-5" style="padding-left:76px;">
-                    <span class="h5" style="vertical-align: middle;">價位：</span>
-                    <input type="text" class="input-likeformcontrol" value="4000" style="width:250px;vertical-align: middle;" />
-                </div>
-                <div class="col-1"></div>
-            </div>
-        </div>
-    </div>
-    <div class="col-12" style="margin-top:2%;">
-        <div class="row">
-            <div class="container">
-                <p class="h5" style="margin-left:10%;">內文：</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-12 mt-2">
+    <div class="col-12" style="margin-bottom: 20px;">
         <div class="container">
             <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8" style="padding-left:0px;">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-3" style="text-align: right;padding: 6px 0 0 15px;">
+                            <h5>標題：</h5>
+                        </div>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="AAA" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-3" style="text-align: right;padding: 6px 0 0 15px;">
+                            <h5>圖片：</h5>
+                        </div>
+                        <div class="col-md-9">
+                            <input type="file" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container text-right" style="margin-top:2%;">
-        <div style="margin-right:190px;">
-            <button type="button" class="btn btn-green-sm">清除</button>
-            <button type="button" class="btn btn-blue-sm">送出</button>
+    <div class="col-12" style="margin-bottom: 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-3" style="text-align: right;padding: 6px 0 0 15px;">
+                            <h5>課程檔期：</h5>
+                        </div>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="AAA" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-3" style="text-align: right;padding: 6px 0 0 15px;">
+                            <h5>價位：</h5>
+                        </div>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="400" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="col-12" style="margin-bottom: 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div style="text-align: right;padding: 6px 0 0 15px;width: 12.5%;">
+                            <h5>內文：</h5>
+                        </div>
+                        <div style="width: 87.5%;padding: 0 15px;">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div style="float: right;">
+                        <button type="button" class="btn btn-green-sm">清除</button>
+                        <button type="button" class="btn btn-blue-sm">送出</button>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
