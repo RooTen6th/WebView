@@ -1,0 +1,660 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>商店(修改)</title>
+    <!--boostrap jquery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--boostrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--boostrap js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--css-->
+    <link href="GreenPet.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-height">
+            <a class="navbar-brand ml-1" href="#">管理者介面</a>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">網站</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">綠寵物</a>
+                </li>
+            </ul>
+            <a class="nav-link ml-lg-auto text-light mr-1" href="#">登出</a>
+        </nav>
+    </div>
+    <div class="col-12">
+        <div class="gray-border">
+            <div class="col-12 p-1">
+                <span>網站 &#62; 商店 &#62; PD1233548 – FFFF – SSSSS – AAAAAA ( 修改 )</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 text-center" style="margin-top:20px;">
+        <h3>PD1233548 – FFFF – SSSSS – AAAAAA ( 修改 )</h3>
+    </div>
+    <div class="col-12">
+        <div class="row">
+            <div class="col-2">
+                <button type="button" class="btn btn-blue-lg">返回商店</button>
+            </div>
+            <div class="offset-8 col-2 text-right">
+                <button type="button" class="btn btn-blue-lg">返回商店</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-12" style="margin-top:20px;">
+        <div class="row" style="margin-bottom:20px;">
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 text-center ">
+                                <b class="text-danger">大項</b>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5 style="margin-left: 20px;">修改標題：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control" placeholder="大項" disabled />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改前參數：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control w-100" placeholder="大項" disabled />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改後參數：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control text-center" placeholder="AAA" />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px; padding-right:15px;">
+                            <div class="offset-8 col-4">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-r text-white">取消</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-b text-white">確定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 text-center ">
+                                <b class="text-danger">小項</b>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5 style="margin-left: 20px;">修改標題：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control" placeholder="小項" disabled />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改前參數：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control w-100" placeholder="小項" disabled />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改後參數：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control text-center" placeholder="AAA" />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px; padding-right:15px;">
+                            <div class="offset-8 col-4">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-r text-white">取消</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-b text-white">確定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 text-center ">
+                                <b class="text-danger">名稱</b>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5 style="margin-left: 20px;">修改標題：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control" placeholder="名稱" disabled />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改前參數：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control w-100" placeholder="AAAAAAAA" disabled />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改後參數：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control text-center" placeholder="BBBBBB" />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px; padding-right:15px;">
+                            <div class="offset-8 col-4">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-r text-white">取消</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-b text-white">確定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 text-center ">
+                                <b class="text-danger">價位</b>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5 style="margin-left: 20px;">修改標題：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control" placeholder="價位" disabled />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改前參數：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control w-100" placeholder="FFFFFF" disabled />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改後參數：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control text-center" placeholder="AAA" />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px; padding-right:15px;">
+                            <div class="offset-8 col-4">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-r text-white">取消</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-b text-white">確定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row" style="margin-bottom:20px;">
+            <div class="col-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 text-center ">
+                                <b class="text-danger">紅利</b>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5 style="margin-left: 20px;">修改標題：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control" placeholder="紅利" disabled />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改前參數：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control w-100" placeholder="ssss" disabled />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改後參數：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control text-center" placeholder="AAA" />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px; padding-right:15px;">
+                            <div class="offset-8 col-4">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-r text-white">取消</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-b text-white">確定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 text-center ">
+                                <b class="text-danger">庫存</b>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5 style="margin-left: 20px;">修改標題：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control" placeholder="庫存" disabled />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改前參數：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control w-100" placeholder="BBBBBB" disabled />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改後參數：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control text-center" placeholder="BBBBBB" />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px; padding-right:15px;">
+                            <div class="offset-8 col-4">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-r text-white">取消</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-b text-white">確定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 text-center ">
+                                <b class="text-danger">上架時間</b>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5 style="margin-left: 20px;">修改標題：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control" placeholder="上架時間" disabled />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改前時間：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control w-100" placeholder="2017-12-14 13:00" disabled />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改後年月日：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <div class="input-group">
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                        <option selected>AAA</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改後時分：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <div class="input-group">
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                        <option selected>AAA</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px; padding-right:15px;">
+                            <div class="offset-8 col-4">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-r text-white">取消</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-b text-white">確定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 text-center ">
+                                <b class="text-danger">照片</b>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5 style="margin-left: 20px;">修改標題：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control" placeholder="照片" disabled />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改前：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <button type="button" class="btn color-b text-white w-100">顯示</button>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改後：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="file" style="" />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px; padding-right:15px;">
+                            <div class="offset-8 col-4">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-r text-white">取消</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-b text-white">確定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-bottom:20px;">
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 text-center ">
+                                <b class="text-danger">小提示</b>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5 style="margin-left: 20px;">修改標題：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control" placeholder="小提示" disabled />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改前：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <button type="button" class="btn color-b text-white w-100">顯示</button>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改後：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <button type="button" class="btn color-b text-white w-100">按鈕輸入</button>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px; padding-right:15px;">
+                            <div class="offset-8 col-4">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-r text-white">取消</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-b text-white">確定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 text-center ">
+                                <b class="text-danger">加購</b>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5 style="margin-left: 20px;">修改標題：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control" placeholder="加購" disabled />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改前：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <button type="button" class="btn color-b text-white w-100">顯示</button>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <div class="input-group">
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                        <option selected>AAA</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px; padding-right:15px;">
+                            <div class="offset-8 col-4">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-r text-white">取消</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-b text-white">確定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 text-center ">
+                                <b class="text-danger">分類</b>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5 style="margin-left: 20px;">修改標題：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control" placeholder="分類" disabled />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改前：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <button type="button" class="btn color-b text-white w-100">顯示</button>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <div class="input-group">
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                        <option selected>AAA</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px; padding-right:15px;">
+                            <div class="offset-8 col-4">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-r text-white">取消</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-b text-white">確定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 text-center ">
+                                <b class="text-danger">敘述</b>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5 style="margin-left: 20px;">修改標題：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <input type="text" class="form-control" placeholder="敘述" disabled />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改前：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <button type="button" class="btn color-b text-white w-100">顯示</button>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-5 text-center" style="padding:5px 0 5px 0;">
+                                <h5>修改：</h5>
+                            </div>
+                            <div class="col-7" style="padding-left:0px;">
+                                <button type="button" class="btn color-b text-white w-100">按鈕輸入</button>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:15px; padding-right:15px;">
+                            <div class="offset-8 col-4">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-r text-white">取消</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="button" class="btn color-b text-white">確定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
