@@ -12,6 +12,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!--css-->
     <link href="GreenPet.css" rel="stylesheet" />
+    <style>
+        tbody {
+            display: block;
+            height: 620px;
+            overflow: auto;
+        }
+
+            thead, tbody tr {
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+            }
+
+        thead {
+            width: calc( 100% - 1em )
+        }
+    </style>
 </head>
 <body>
     <div class="col-12">
@@ -36,7 +53,7 @@
         </div>
     </div>
     <div class="col-12" style="margin-top:2%;">
-        <div class="row">
+        <div class="row"  style="padding-right:15px;">
             <div class="col-12 text-right">
                 <button type="button" class="btn btn-green-lg">Excel匯入商品</button>
             </div>
@@ -146,6 +163,13 @@
                 </tr>
             </tbody>
         </table>
+    </div>
+    <div class="col-12">
+        <div class="row" style="padding-right:15px;">
+            <div class="col-12 text-right">
+                <button type="button" class="btn btn-blue-lg">確定匯入</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
