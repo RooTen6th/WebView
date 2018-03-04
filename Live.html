@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>直播</title>
+    <!--boostrap jquery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--boostrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--boostrap js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--css-->
+    <link href="GreenPet.css" rel="stylesheet" />
+    <!--ico-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <style>
+        tbody {
+            display: block;
+            height: 360px;
+            overflow: auto;
+        }
+
+            thead, tbody tr {
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+            }
+
+        thead {
+            width: calc( 100% - 1em )
+        }
+    </style>
+</head>
+<body>
+    <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-height">
+            <a class="navbar-brand ml-1" href="#">管理者介面</a>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">網站</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">綠寵物</a>
+                </li>
+            </ul>
+            <a class="nav-link ml-lg-auto text-light mr-1" href="#">登出</a>
+        </nav>
+    </div>
+    <div class="col-12">
+        <div class="gray-border">
+            <div class="col-12 p-1">
+                <span>網站 &#62; 直播</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 border-bottom" style="margin-bottom: 2%; margin-top:20px;">
+        <table class="table table-hover  mb-4 tb">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">
+                        直播時間
+                        <a href="">
+                            <i class="fas fa-sort-down fa-lg text-light" style="padding-bottom:5px;"></i>
+                        </a>
+                    </th>
+                    <th scope="col">標題</th>
+                    <th scope="col">預約觀看人數</th>
+                    <th scope="col">功能</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2017-01-11：13:25.315</td>
+                    <td>AAAA</td>
+                    <td>56</td>
+                    <td>
+                        <button type="button" class="btn btn-green-sm">修改</button>
+                        <button type="button" class="btn btn-red-sm">刪除</button>
+                        <button type="button" class="btn btn-blue-sm">開啟</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2015-12-21：18:11.644</td>
+                    <td>VVVV</td>
+                    <td>44</td>
+                    <td>
+                        <button type="button" class="btn btn-green-sm">修改</button>
+                        <button type="button" class="btn btn-red-sm">刪除</button>
+                        <button type="button" class="btn btn-purple-sm">關閉</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-12" style="margin-bottom: 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="offset-2 col-4">
+                    <div class="row">
+                        <div class="col-3" style="text-align: right;padding: 6px 0 0 15px;">
+                            <h5>標題：</h5>
+                        </div>
+                        <div class="col-9">
+                            <input type="text" class="form-control" placeholder="AAA"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-3" style="text-align: right;padding: 6px 0 0 15px;">
+                            <h5>圖片：</h5>
+                        </div>
+                        <div class="col-9" style="padding:5px;">
+                            <input type="file"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12" style="margin-bottom: 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="text-right" style=" padding: 6px 0 0 15px; width: 12.5%;">
+                            <h5>
+                                內文：
+                            </h5>
+                        </div>
+                        <div style="width: 87.5%;padding: 0 15px; padding: 6px 0 0 15px;">
+                            <h5>
+                                (最多30個字並不需換行)
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:10px;">
+                        <div style="text-align: right;padding: 6px 0 0 15px;width: 12.5%;">
+                        </div>
+                        <div style="width: 87.5%;padding: 0 15px;">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div style="float: right;">
+                        <button type="button" class="btn btn-green-sm">清除</button>
+                        <button type="button" class="btn btn-blue-sm">送出</button>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
