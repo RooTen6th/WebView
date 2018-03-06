@@ -2,7 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>新增商品</title>
+    <!--RWD-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
     <!--boostrap jquery-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <!--boostrap css-->
@@ -12,10 +13,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!--css-->
     <link href="GreenPet.css" rel="stylesheet" />
+    <title>交易紀錄</title>
     <style>
         tbody {
             display: block;
-            height: 620px;
+            height: 600px;
             overflow: auto;
         }
 
@@ -26,7 +28,16 @@
             }
 
         thead {
-            width: calc( 100% - 1em )
+            width: calc( 100% - 1em)
+        }
+        .drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+            background-color: #ef5c28;
+            color: #fff;
+        }
+
+        .drop-down-menu a:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+            background-color: #ef5c28;
+            color: #fff;
         }
     </style>
 </head>
@@ -37,6 +48,7 @@
                 <a class="text-light h4" href="#">管理者介面</a>
             </div>
             <div class="col-3 my-auto" style="padding-left:150px;">
+                <!--<a class="text-light h5" href="#"></a>-->
                 <a class="dropdown-toggle text-light h5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">網站</a>
                 <div class="dropdown-menu mt-2">
                     <a class="dropdown-item" href="/OrderRecords.html">交易紀錄</a>
@@ -68,128 +80,97 @@
     <div class="col-12" style="margin-top:15px;">
         <div style="border-radius: 5px; background-color: #d2d2d2;">
             <div class="col-12 p-1">
-                <span>網站 &#62; 商店 &#62; 新增商品</span>
+                <span>網站 &#62; 交易紀錄</span>
             </div>
         </div>
     </div>
-    <div class="col-12" style="margin-top:2%;">
-        <div class="row" style="padding-right:15px;">
-            <div class="col-12 text-right">
-                <button type="button" class="btn btn-green-lg">Excel匯入商品</button>
+    <div class="col-12">
+        <div class="row">
+            <div class="col-12 p-2">
+                <button type="button" class="btn mx-2" style="float: right;width: 70px;background-color: #337ab7;color: white;">修改</button>
+                <input class="form-control mx-2" value="3" style="width: 50px;float:right;text-align: right;">
+                <div class="mx-2 text-center mt-2" style="float:right;">抵達時間提早N天信箱提醒：</div>
+                <div style="clear:both;"></div>
             </div>
         </div>
     </div>
-    <div class="col-12" style="margin-bottom: 2%; margin-top:20px;">
-        <table class="table table-hover  mb-4 tb">
+    <div class="container">
+        <div class="row mt-4">
+            <div class="div-center">
+                <button type="button" class="btn my-1 mx-2 btn-blue-lg">恢復顯示</button>
+                <button type="button" class="btn my-1 mx-2 btn-green-lg">交易完成</button>
+                <button type="button" class="btn my-1 mx-2 btn-orange-lg">尚未完成</button>
+                <button type="button" class="btn my-1 mx-2 btn-red-lg">取消</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-12" style="padding: 20px;">
+        <table class="table table-hover tb">
             <thead class="thead-dark">
-                <tr>
-                    <th scope="col">編號</th>
-                    <th scope="col">大項</th>
-                    <th scope="col">小項</th>
-                    <th scope="col">名稱</th>
-                    <th scope="col">照片</th>
-                    <th scope="col">小提示</th>
-                    <th scope="col">加購</th>
-                    <th scope="col">分類</th>
-                    <th scope="col">敘述</th>
-                    <th scope="col">價位</th>
-                    <th scope="col">紅利</th>
-                    <th scope="col">上架時間</th>
-                    <th scope="col">庫存</th>
+                <tr class="text-center">
+                    <th scope="col">訂單編號</th>
+                    <th scope="col">會員編號</th>
+                    <th scope="col">商品</th>
+                    <th scope="col">交易狀態</th>
+                    <th scope="col">訂購時間</th>
+                    <th scope="col">抵達時間</th>
                     <th scope="col">功能</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
+                    <td>ORDER-000001</td>
+                    <td>132503131</td>
                     <td>
-                        <input type="text" class="form-control text-center" placeholder="輸入" />
+                        <button class="btn btn-primary btn-blue-md">顯示</button>
                     </td>
+                    <td class="text-success">交易成功</td>
                     <td>
-                        <button type="button" class="btn btn-blue-sm">輸入</button>
+                        <div>2017-12-22</div>
+                        <div>13.25.123</div>
                     </td>
+                    <td>2017-12-22</td>
                     <td>
-                        <button type="button" class="btn btn-blue-sm">輸入</button>
-                    </td>
-                    <td>
-                        <input type="text" class="form-control text-center" placeholder="輸入" />
-                    </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">輸入</button>
-                    </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">輸入</button>
-                    </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">輸入</button>
-                    </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">輸入</button>
-                    </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">輸入</button>
-                    </td>
-                    <td>
-                        <input type="text" class="form-control text-center" placeholder="輸入" />
-                    </td>
-                    <td>
-                        <input type="text" class="form-control text-center" placeholder="輸入" />
-                    </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">輸入</button>
-                    </td>
-                    <td>
-                        <input type="text" class="form-control text-center" placeholder="輸入" />
-                    </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">輸入</button>
+                        <button class="btn btn-green-sm">已出貨</button>
+                        <button class="btn btn-red-sm">刪除</button>
                     </td>
                 </tr>
                 <tr>
-                    <td>PD1233548</td>
-                    <td>FFFF</td>
-                    <td>SSSSS</td>
-                    <td>AAAAAA</td>
+                    <td>ORDER-000002</td>
+                    <td>31215123</td>
                     <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                        <button class="btn btn-primary btn-blue-md">顯示</button>
                     </td>
+                    <td class="text-danger">交易失敗</td>
                     <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                        <div>2017-12-22</div>
+                        <div>13.25.123</div>
                     </td>
+                    <td>2017-12-22</td>
                     <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                        <button class="btn btn-blue-sm">通知出貨</button>
+                        <button class="btn btn-red-sm">刪除</button>
                     </td>
+                </tr>
+                <tr>
+                    <td>ORDER-000002</td>
+                    <td>31215123</td>
                     <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                        <button class="btn btn-primary btn-blue-md">顯示</button>
                     </td>
+                    <td class="text-muted">處理中</td>
                     <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                        <div>2017-12-22</div>
+                        <div>13.25.123</div>
                     </td>
-                    <td>2580</td>
-                    <td>3</td>
+                    <td>2017-12-22</td>
                     <td>
-                        <span>
-                            2017-12-14
-                        </span>
-                        <span>
-                            13:00
-                        </span>
-                    </td>
-                    <td>200</td>
-                    <td>
-                        <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
-                        </div>
+                        <button class="btn btn-purple-sm">修改</button>
+                        <button class="btn btn-red-sm">刪除</button>
                     </td>
                 </tr>
             </tbody>
         </table>
-    </div>
-    <div class="col-12">
-        <div class="row" style="padding-right:15px;">
-            <div class="col-12 text-right">
-                <button type="button" class="btn btn-blue-lg">確定匯入</button>
-            </div>
-        </div>
     </div>
 </body>
 </html>

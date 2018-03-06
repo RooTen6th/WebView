@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>凱特圖庫</title>
+    <style>
+        tbody {
+            display: block;
+            height: 620px;
+            overflow: auto;
+        }
+
+            thead, tbody tr {
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+            }
+
+        thead {
+            width: calc( 100% )
+        }
+    </style>
+    <!--boostrap jquery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--boostrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--boostrap js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--css-->
+    <link href="GreenPet.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="col-12">
+        <div class="row bg-dark text-center" style="height:60px;">
+            <div class="col-3  my-auto text-left" style="padding-left:30px;">
+                <a class="text-light h4" href="#">管理者介面</a>
+            </div>
+            <div class="col-3 my-auto" style="padding-left:150px;">
+                <!--<a class="text-light h5" href="#"></a>-->
+                <a class="dropdown-toggle text-light h5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">網站</a>
+                <div class="dropdown-menu mt-2">
+                    <a class="dropdown-item" href="/OrderRecords.html">交易紀錄</a>
+                    <a class="dropdown-item" href="/DataCenter.html">數據中心</a>
+                    <a class="dropdown-item" href="/ClientVoice.html">客戶聲音</a>
+                    <a class="dropdown-item" href="/Carousel.html">輪播</a>
+                    <a class="dropdown-item" href="/Writings.html">文章</a>
+                    <a class="dropdown-item" href="/Course.html">課程</a>
+                    <a class="dropdown-item" href="/News.html">新聞</a>
+                    <a class="dropdown-item" href="/store.html">商店</a>
+                    <a class="dropdown-item" href="/Live.html">直播</a>
+                </div>
+            </div>
+            <div class="col-3 my-auto" style="padding-right:150px;">
+                <a class="nav-item dropdown-toggle text-light h5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">綠寵物</a>
+                <div class="dropdown-menu mt-2">
+                    <a class="dropdown-item" href="/ClickRate.html">點擊率</a>
+                    <a class="dropdown-item" href="/Notice.html">通知</a>
+                    <a class="dropdown-item" href="/Blog.html">部落格</a>
+                    <a class="dropdown-item" href="/Group.html">固定群組</a>
+                    <a class="dropdown-item" href="/NameAndType.html">名稱與類型</a>
+                </div>
+            </div>
+            <div class="col-3 my-auto text-right" style="padding-right:30px;">
+                <a class="text-light h5" href="#">登出</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-12" style="margin-top:15px;">
+        <div style="border-radius: 5px; background-color: #d2d2d2;">
+            <div class="col-12 p-1">
+                <span>網站 &#62; 凱特圖庫</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 text-center" style="margin-top:4%;">
+        <h1>凱特圖庫</h1>
+    </div>
+    <div class="col-12" style="margin-top:20px;">
+        <div class="row">
+            <div class="col-2">
+                <button type="button" class="btn btn-green-md">匯出</button>
+            </div>
+            <div class="offset-6 col-4" style="padding-right:0px;">
+                <div class="row">
+                    <div class="col-3 text-right" style="padding:0px;">
+                        <p style="font-size:1.4em;">標題特搜：</p>
+                    </div>
+                    <div class="col-6" style="padding:0px;">
+                        <input type="text" class="form-control text-center" placeholder="輸入標題、照片類型" />
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-blue-sm">搜尋</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border-bottom col-12" style="margin-bottom: 2%; margin-top:20px;">
+        <table class="table table-hover tb">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">排序</th>
+                    <th scope="col">標題</th>
+                    <th scope="col">照片類型</th>
+                    <th scope="col">照片位置</th>
+                    <th scope="col">照片</th>
+                    <th scope="col">時間</th>
+                    <th scope="col">功能</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color:#DDDDDD;padding-right:1em;">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <button type="button" class="btn btn-blue-lg">新增</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>封面照</td>
+                    <td>商品</td>
+                    <td>/abc/123.jpg</td>
+                    <td>
+                        <img src="/image01.jpg" height="130" width="200" />
+                    </td>
+                    <td>
+                        <div>2017-12-12</div>
+                        <div>13:15.123</div>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-green-sm my-1">修改</button>
+                        <button type="button" class="btn btn-red-sm my-1">清除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>封面照</td>
+                    <td>一般</td>
+                    <td>/abc/123.jpg</td>
+                    <td>
+                        <img src="/image01.jpg" height="130" width="200" />
+                    </td>
+                    <td>
+                        <div>2017-12-12</div>
+                        <div>13:15.123</div>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-green-sm my-1">修改</button>
+                        <button type="button" class="btn btn-red-sm my-1">清除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>封面照</td>
+                    <td>一般</td>
+                    <td>/abc/123.jpg</td>
+                    <td>
+                        <img src="/image01.jpg" height="130" width="200" />
+                    </td>
+                    <td>
+                        <div>2017-12-12</div>
+                        <div>13:15.123</div>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-green-sm my-1">修改</button>
+                        <button type="button" class="btn btn-red-sm my-1">清除</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

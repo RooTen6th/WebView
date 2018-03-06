@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>交易紀錄(修改)</title>
+    <!--boostrap jquery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--boostrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--boostrap js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--css-->
+    <link href="GreenPet.css" rel="stylesheet" />
+    <style>
+        tbody {
+            display: block;
+            height: 300px;
+            overflow: auto;
+        }
+
+            thead, tbody tr {
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+            }
+
+        thead {
+            width: calc( 100% - 1em)
+        }
+    </style>
+</head>
+<body>
+    <div class="col-12">
+        <div class="row bg-dark text-center" style="height:60px;">
+            <div class="col-3  my-auto text-left" style="padding-left:30px;">
+                <a class="text-light h4" href="#">管理者介面</a>
+            </div>
+            <div class="col-3 my-auto" style="padding-left:150px;">
+                <!--<a class="text-light h5" href="#"></a>-->
+                <a class="dropdown-toggle text-light h5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">網站</a>
+                <div class="dropdown-menu mt-2">
+                    <a class="dropdown-item" href="/OrderRecords.html">交易紀錄</a>
+                    <a class="dropdown-item" href="/DataCenter.html">數據中心</a>
+                    <a class="dropdown-item" href="/ClientVoice.html">客戶聲音</a>
+                    <a class="dropdown-item" href="/Carousel.html">輪播</a>
+                    <a class="dropdown-item" href="/Writings.html">文章</a>
+                    <a class="dropdown-item" href="/Course.html">課程</a>
+                    <a class="dropdown-item" href="/News.html">新聞</a>
+                    <a class="dropdown-item" href="/store.html">商店</a>
+                    <a class="dropdown-item" href="/Live.html">直播</a>
+                </div>
+            </div>
+            <div class="col-3 my-auto" style="padding-right:150px;">
+                <a class="nav-item dropdown-toggle text-light h5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">綠寵物</a>
+                <div class="dropdown-menu mt-2">
+                    <a class="dropdown-item" href="/ClickRate.html">點擊率</a>
+                    <a class="dropdown-item" href="/Notice.html">通知</a>
+                    <a class="dropdown-item" href="/Blog.html">部落格</a>
+                    <a class="dropdown-item" href="/Group.html">固定群組</a>
+                    <a class="dropdown-item" href="/NameAndType.html">名稱與類型</a>
+                </div>
+            </div>
+            <div class="col-3 my-auto text-right" style="padding-right:30px;">
+                <a class="text-light h5" href="#">登出</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-12" style="margin-top:15px;">
+        <div style="border-radius: 5px; background-color: #d2d2d2;">
+            <div class="col-12 p-1">
+                <span>網站 &#62; 交易紀錄 &#62; ORDER-000001 – 132503131 ( 修改 )</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 text-center" style="margin-top:4%;">
+        <h3>ORDER–000001 – 132503131  ( 修改 )</h3>
+    </div>
+
+    <div class="container" style="margin-top:3%;">
+        <div class="row" style="text-align:center;padding:14px;">
+            <div class="col-6" style="text-align:left; padding-right:0px;">
+                <span class="h4">訂購時間：</span>
+                <input class="input-likeformcontrol" style="text-align:center;width:400px;" type="text" placeholder="2017-12-22 13.25.123" />
+            </div>
+            <div class="col-6" style="text-align:right; padding-left:0px;">
+                <span class="h4">抵達時間：</span>
+                <input class="input-likeformcontrol" style="text-align:center;width:400px;" type="text" placeholder="2017-12-21 13:00" />
+            </div>
+        </div>
+        <div class="row" style="text-align:center; margin-top:4%;">
+            <div class="col-4">
+                <span class="h4">訂單邊號：</span>
+                <input class="input-likeformcontrol" disabled style="text-align:center;" type="text" value="ORDER-000001" />
+            </div>
+            <div class="col-4">
+                <span class="h4">會員編號：</span>
+                <input class="input-likeformcontrol" disabled style="text-align:center;" type="text" value="132503131" />
+            </div>
+            <div class="col-4" style="padding-right:0px;">
+                <span class="h4">交易狀態：</span>
+                <button type="button" class="btn btn-blue-lg">處理中</button>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top:2%;">
+        <div class="row">
+            <div class="col-12" style="margin-left:60px;">
+                <h4>商品：</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" style="padding-right:30px;padding-left:150px; ">
+                <table class="table table-hover tb">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">商品編號</th>
+                            <th scope="col">名稱</th>
+                            <th scope="col">價位</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>PD31221321</td>
+                            <td>花瓶</td>
+                            <td>600</td>
+                        </tr>
+                        <tr>
+                            <td>PD556511112</td>
+                            <td>葉子</td>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <td>PD998979</td>
+                            <td>乾燥花</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <td>PD31221321</td>
+                            <td>花瓶</td>
+                            <td>600</td>
+                        </tr>
+                        <tr>
+                            <td>PD556511112</td>
+                            <td>葉子</td>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <td>PD998979</td>
+                            <td>乾燥花</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <td>PD556511112</td>
+                            <td>葉子</td>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <td>PD998979</td>
+                            <td>乾燥花</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <td>PD556511112</td>
+                            <td>葉子</td>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <td>PD998979</td>
+                            <td>乾燥花</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <td>PD556511112</td>
+                            <td>葉子</td>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <td>PD998979</td>
+                            <td>乾燥花</td>
+                            <td>400</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding-top:20px;">
+        <div class="row">
+            <div class="col-12" style="text-align:right; padding-right:30px;">
+                <button type="button" class="btn btn-blue-lg">確定修改</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
