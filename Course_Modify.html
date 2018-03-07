@@ -21,31 +21,74 @@
             <div class="col-3  my-auto text-left" style="padding-left:30px;">
                 <a class="text-light h4" href="#">管理者介面</a>
             </div>
-            <div class="col-3 my-auto" style="padding-left:150px;">
-                <!--<a class="text-light h5" href="#"></a>-->
-                <a class="dropdown-toggle text-light h5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">網站</a>
-                <div class="dropdown-menu mt-2">
-                    <a class="dropdown-item" href="/OrderRecords.html">交易紀錄</a>
-                    <a class="dropdown-item" href="/DataCenter.html">數據中心</a>
-                    <a class="dropdown-item" href="/ClientVoice.html">客戶聲音</a>
-                    <a class="dropdown-item" href="/Carousel.html">輪播</a>
-                    <a class="dropdown-item" href="/Writings.html">文章</a>
-                    <a class="dropdown-item" href="/Course.html">課程</a>
-                    <a class="dropdown-item" href="/News.html">新聞</a>
-                    <a class="dropdown-item" href="/store.html">商店</a>
-                    <a class="dropdown-item" href="/AddProduct.html">新增商品</a>
-                    <a class="dropdown-item" href="/AddProduct_Sup.html">協助消費者新增商品</a>
-                    <a class="dropdown-item" href="/Live.html">直播</a>
+            <div class="col-3 my-auto">
+                <div class="dropdown" style="float:right;margin-top:5px;">
+                    <div style="height:30px;">
+                        <a class="dropdown-toggle text-light h5" style="cursor: pointer;">網站</a>
+                    </div>
+                    <ul class="dropdown-menu dropdown-content" style="margin-top:0px;">
+                        <li>
+                            <a class="dropdown-item" href="/OrderRecords.html">交易紀錄</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/DataCenter.html">數據中心</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/ClientVoice.html">客戶聲音</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Carousel.html">輪播</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Writings.html">文章</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Course.html">課程</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/News.html">新聞</a>
+                        </li>
+                        <li class="btn-group text-center dropdown-submenu dropright">
+                            <a class="dropdown-item" href="" style="width:155px; text-align:left; cursor:context-menu;">
+                                商店
+                                <span class="dropdown-toggle" style="float:right;"></span>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-">
+                                <a class="dropdown-item" href="/store.html">商店</a>
+                                <a class="dropdown-item" href="/AddProduct.html">新增商品</a>
+                                <a class="dropdown-item" href="/AddProduct_Sup.html">協助消費者新增商品</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Live.html">直播</a>
+                        </li>
+                    </ul>
                 </div>
+                <div style="clear:both;"></div>
             </div>
-            <div class="col-3 my-auto" style="padding-right:150px;">
-                <a class="nav-item dropdown-toggle text-light h5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">綠寵物</a>
-                <div class="dropdown-menu mt-2">
-                    <a class="dropdown-item" href="/ClickRate.html">點擊率</a>
-                    <a class="dropdown-item" href="/Notice.html">通知</a>
-                    <a class="dropdown-item" href="/Blog.html">部落格</a>
-                    <a class="dropdown-item" href="/Group.html">固定群組</a>
-                    <a class="dropdown-item" href="/NameAndType.html">名稱與類型</a>
+            <div class="col-3 my-auto">
+                <div class="dropdown" style="float:left;margin-top:5px;">
+                    <div style="height:30px;">
+                        <a class="dropdown-toggle text-light h5" style="cursor: pointer;">綠寵物</a>
+                    </div>
+                    <ul class="dropdown-menu dropdown-content" style="margin-top:0px;">
+                        <li>
+                            <a class="dropdown-item" href="/ClickRate.html">點擊率</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Notice.html">通知</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Blog.html">部落格</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Group.html">固定群組</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/NameAndType.html">名稱與類型</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="col-3 my-auto text-right" style="padding-right:30px;">
@@ -72,7 +115,7 @@
                             <h5>標題：</h5>
                         </div>
                         <div class="col-md-9">
-                            <input type="text" class="form-control" placeholder="AAA" />
+                            <input type="text" class="form-control text-center" placeholder="請輸入標題" />
                         </div>
                     </div>
                 </div>
@@ -101,7 +144,7 @@
                             </h5>
                         </div>
                         <div style="width: 87.5%;padding: 0 15px;">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" style="resize:none;"></textarea>
                         </div>
                     </div>
                 </div>

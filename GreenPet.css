@@ -1,28 +1,11 @@
 ﻿.gray-border {
-    margin-top: 60px;
     border-radius: 5px;
     background-color: #d2d2d2;
 }
 
 .btn {
     border-radius: 10px;
-}
-
-.update-btn {
-    float: right;
-    width: 70px;
-    background-color: #337ab7;
-    color: white;
-}
-
-.update-input {
-    width: 50px;
-    float: right;
-    text-align: right;
-}
-
-.update-text {
-    float: right;
+    height:40px;
 }
 
 .btn-green-lg {
@@ -60,6 +43,13 @@
     color: white;
 }
 
+.btn-green-md {
+    width: 120px;
+    height: 40px;
+    background-color: #5cb85c;
+    color: white;
+}
+
 .btn-green-sm {
     width: 90px;
     background-color: #5cb85c;
@@ -77,18 +67,11 @@
     background-color: #337ab7;
     color: white;
 }
+
 .btn-purple-sm {
     width: 90px;
     background-color: #9370DB;
     color: white;
-}
-
-.navbar-height {
-    height: 50px;
-}
-
-.tb-padding {
-    padding: 20px;
 }
 
 .div-center {
@@ -98,15 +81,21 @@
 .color-b {
     background-color: #337ab7;
 }
+
 .color-g {
     background-color: #5cb85c;
 }
+
 .color-r {
     background-color: #d9534f;
 }
 
+.color-p {
+    background-color: #9370DB;
+}
+
 .float-r {
-    float:right;
+    float: right;
 }
 
 .input-likeformcontrol {
@@ -118,4 +107,47 @@
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
+}
+
+.tb tr {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.tb td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+    /*第二層dropdown*/
+    .dropdown-submenu > .dropdown-menu {
+        top: 0px;
+        left: 100%;
+        margin-top: -6px;
+        margin-left: 0px;
+        border-radius: 6px;
+    }
+
+    .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-submenu.pull-left {
+        float: none;
+    }
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+}
+
+    .dropdown-content a:hover {
+        background-color: #ddd
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
