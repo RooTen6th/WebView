@@ -12,6 +12,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!--css-->
     <link href="GreenPet.css" rel="stylesheet" />
+    <!--ico-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <style>
         tbody {
             display: block;
@@ -124,10 +126,15 @@
                 <table class="table table-border table-hover tb">
                     <thead class="thead-dark">
                         <tr>
-                            <th style="width: 25%;">時間</th>
-                            <th style="width: 25%;">標題</th>
-                            <th style="width: 25%;">觀看人數</th>
-                            <th style="width: 25%;">功能</th>
+                            <th scope="col">
+                                時間
+                                <a href="">
+                                    <i class="fas fa-sort-down fa-lg text-light" style="padding-bottom:5px;"></i>
+                                </a>
+                            </th>
+                            <th scope="col">標題</th>
+                            <th scope="col">觀看人數</th>
+                            <th scope="col">功能</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -208,29 +215,39 @@
             </div>
         </div>
         <div class="row border-top" style="padding-top: 30px;">
-            <div class="col-7">
+            <div class="col-4">
                 <div class="row">
-                    <div class="col-3 text-right my-auto">
+                    <div class="col-4 text-right my-auto">
                         <span class="h5">標題：</span>
                     </div>
-                    <div class="col-9" style="padding:0px;">
+                    <div class="col-8" style="padding:0px;">
                         <input type="text" class="input-likeformcontrol text-center" placeholder="請輸入標題" style="width: 100%;" />
                     </div>
                 </div>
             </div>
-            <div class="col-5">
+            <div class="col-4">
+                <div class="row">
+                    <div class="col-4 text-right my-auto">
+                        <span class="h5">封面：</span>
+                    </div>
+                    <div class="col-8" style="padding:0px;">
+                        <input type="file"/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4" style="padding-left:0px;">
                 <div class="row">
                     <div class="col-3 text-right my-auto">
-                        <span class="h5">圖片：</span>
+                        <span class="h5">內容：</span>
                     </div>
-                    <div class="col-9" style="padding:0px;">
-                        <input type="file" style="width: 100%;" />
+                    <div class="col-7 text-left" style="padding:0px;">
+                        <input type="file"/>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row" style="margin-top:20px;">
-            <div class="col-11" style="padding-right:55px;">
+            <div class="col-11" style="padding-right:0px;">
                 <div style="float: right;">
                     <button type="button" class="btn btn-green-sm mr-2">清除</button>
                     <button type="button" class="btn btn-blue-sm">送出</button>

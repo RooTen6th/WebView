@@ -12,7 +12,28 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!--css-->
     <link href="GreenPet.css" rel="stylesheet" />
-    
+    <style>
+        tbody {
+            display: block;
+            height: 400px;
+            overflow: auto;
+        }
+
+            thead, tbody tr {
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+            }
+
+        thead {
+            width: calc( 100% - 1em )
+        }
+    </style>
+    <script>
+        $(function () {
+            $('tbody').css({ "height": $('body').height() - 520 });
+        });
+    </script>
 </head>
 <body>
     <div class="col-12">
@@ -102,36 +123,39 @@
             </div>
         </div>
     </div>
-    <div class="container" style="margin-top:20px;">
+    <div class="col-12" style="margin-top:20px;">
         <div class="row">
-            <div class="col-5">
-                <div class="row">
-                    <div class="col-3 text-center" style="padding:0px;">
-                        <p style="font-size:1.4em;">商品特搜：</p>
+            <div class="offset-1 col-5 text-right">
+                <div class="row" style="padding-left:50px;">
+                    <div class="col-5 text-right">
+                        <span style="font-size:1.4em;">消費者快搜：</span>
                     </div>
-                    <div class="col-6" style="padding:0px;">
-                        <input type="text" class="form-control text-center" style="" placeholder="輸入商品名稱、編號" />
+                    <div class="col-4" style="padding:0px;">
+                        <input type="text" class="form-control text-center" style="" placeholder="輸入電話、姓名" />
                     </div>
-                    <div class="col-3">
-                        <button type="button" class="btn btn-blue-sm">搜尋</button>
+                    <div class="col-3 text-left">
+                        <button type="button" class="btn btn-blue-sm ">搜尋</button>
                     </div>
                 </div>
+            </div>
+            <div class="col-6"></div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="row" style="margin-top:10px;">
+            <div class="offset-2 col-5" style="padding-left:55px;">
+                <p style="font-size:1.4em;">會員個資</p>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row" style="margin-top:10px;">
-            <div class="col-12" style="padding-left:20px;">
-                <p style="font-size:1.4em;">會員個資</p>
-            </div>
-        </div>
-        <div class="row" style="margin-top:10px;">
             <div class="col-3">
-                <div class="row">
+                <div class="row"style="padding-left:25px;">
                     <div class="col-5" style="padding-right:5px;">
                         <p style="font-size:1.4em;" class="text-right">姓名：</p>
                     </div>
-                    <div class="col-7" style="padding:0px;">
+                    <div class="col-7" style="padding-left:10px;padding-right:0px;">
                         <input type="text" class="form-control text-center" style="" placeholder="鄒年寶" disabled />
                     </div>
                 </div>
@@ -146,7 +170,7 @@
                     </div>
                 </div>
             </div>
-            <div style="width:30%;">
+            <div class="col-3">
                 <div class="row">
                     <div class="col-4" style="padding-right:5px;">
                         <p style="font-size:1.4em;" class="text-right">信箱：</p>
@@ -156,7 +180,7 @@
                     </div>
                 </div>
             </div>
-            <div style="width:20%;">
+            <div class="col-3">
                 <div class="row" style=" padding-left:5px;">
                     <div class="col-5" style="padding-right:5px;">
                         <p style="font-size:1.4em;" class="text-right">生日：</p>
@@ -168,27 +192,27 @@
             </div>
         </div>
         <div class="row">
-            <div style="width:60%;">
+            <div class="col-6">
                 <div class="row">
-                    <div style="width:18%;">
+                    <div class="col-3">
                         <p style="font-size:1.4em;" class="text-right">註解：</p>
                     </div>
-                    <div style="width:82%; padding-left:5px; padding-right:10px;">
+                    <div class="col-9" style="padding:0px;">
                         <input type="text" class="form-control text-center" style="" placeholder="人不錯，客氣" disabled />
                     </div>
                 </div>
             </div>
-            <div style="width:20%;">
+            <div class="col-3">
                 <div class="row" style="padding-left:5px; padding-right:5px;">
-                    <div class="col-5" style="padding-right:5px;">
+                    <div class="col-4" style="padding-right:5px;">
                         <p style="font-size:1.4em;" class="text-right">註冊：</p>
                     </div>
-                    <div class="col-7" style="padding:0px;">
+                    <div class="col-8" style="padding:0px;">
                         <input type="text" class="form-control text-center" style="" placeholder="2017-12-12" disabled />
                     </div>
                 </div>
             </div>
-            <div style="width:20%;">
+            <div class="col-3">
                 <div class="row" style=" padding-left:5px;">
                     <div class="col-5" style="padding-right:5px;">
                         <p style="font-size:1.4em;" class="text-right">紅利：</p>
@@ -200,69 +224,110 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="col-12">
         <div class="row" style="margin-top:10px;">
-            <div class="col-12" style="padding-left:20px;">
+            <div class="offset-2 col-5" style="padding-left:55px;">
                 <p style="font-size:1.4em;">協助新增商品</p>
             </div>
-        </div>
-        <div class="row" style="margin-top:20px;">
-            <div class="offset-1 col-5">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <img src="/image01.jpg" width="280" height="280" style="border-radius:15px;" />
-                    </div>
-                </div>
+            <div class="offset-1 col-4" style="padding-left:145px;">
+                <button type="button" class="btn btn-blue-md">新增商品</button>
             </div>
-            <div class="col-5" style="padding:20px;">
-                <div class="row">
-                    <div class="col-5" style="padding-right:5px;">
-                        <p style="font-size:1.4em;" class="text-right">商品編號：</p>
-                    </div>
-                    <div class="col-7" style="padding:0px;">
-                        <input type="text" class="form-control text-center" style="" placeholder="輸入商品編號" />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-5" style="padding-right:5px;">
-                        <p style="font-size:1.4em;" class="text-right">大項：</p>
-                    </div>
-                    <div class="col-7" style="padding:0px;">
-                        <input type="text" class="form-control text-center" style="" placeholder="DDDDDD" disabled />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-5" style="padding-right:5px;">
-                        <p style="font-size:1.4em;" class="text-right">小項：</p>
-                    </div>
-                    <div class="col-7" style="padding:0px;">
-                        <input type="text" class="form-control text-center" style="" placeholder="FFFFFF" disabled />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-5" style="padding-right:5px;">
-                        <p style="font-size:1.4em;" class="text-right">紅利：</p>
-                    </div>
-                    <div class="col-7" style="padding:0px;">
-                        <input type="text" class="form-control text-center" style="" placeholder="輸入紅利" />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-5" style="padding-right:5px;">
-                        <p style="font-size:1.4em;" class="text-right">價位：</p>
-                    </div>
-                    <div class="col-7" style="padding:0px;">
-                        <input type="text" class="form-control text-center" style="" placeholder="輸入價位" />
-                    </div>
-                </div>
-                <div class="row text-right" style="margin-top:40px;">
-                    <div class="offset-2 col-5" style="padding-right:0px;">
-                        <button type="button" class="btn btn-red-lg">取消</button>
-                    </div>
-                    <div class="col-5" style="padding-right:0px;">
-                        <button type="button" class="btn btn-blue-lg">確定</button>
-                    </div>
-                </div>
+        </div>
+    </div>
+    <div class="container" style="padding:0px; margin-top:10px;">
+        <div class="row" style="margin-bottom: 20px;">
+            <table class="table table-border table-hover tb">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">商品編號</th>
+                        <th scope="col">產品名稱</th>
+                        <th scope="col">紅利</th>
+                        <th scope="col">價位</th>
+                        <th scope="col">功能</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PD11111111</td>
+                        <td>...</td>
+                        <td>3</td>
+                        <td>200</td>
+                        <td>
+                            <button type="button" class="btn btn-red-sm">刪除</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PD11111111</td>
+                        <td>...</td>
+                        <td>3</td>
+                        <td>200</td>
+                        <td>
+                            <button type="button" class="btn btn-red-sm">刪除</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PD11111111</td>
+                        <td>...</td>
+                        <td>3</td>
+                        <td>200</td>
+                        <td>
+                            <button type="button" class="btn btn-red-sm">刪除</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PD11111111</td>
+                        <td>...</td>
+                        <td>3</td>
+                        <td>200</td>
+                        <td>
+                            <button type="button" class="btn btn-red-sm">刪除</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PD11111111</td>
+                        <td>...</td>
+                        <td>3</td>
+                        <td>200</td>
+                        <td>
+                            <button type="button" class="btn btn-red-sm">刪除</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PD11111111</td>
+                        <td>...</td>
+                        <td>3</td>
+                        <td>200</td>
+                        <td>
+                            <button type="button" class="btn btn-red-sm">刪除</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PD11111111</td>
+                        <td>...</td>
+                        <td>3</td>
+                        <td>200</td>
+                        <td>
+                            <button type="button" class="btn btn-red-sm">刪除</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PD11111111</td>
+                        <td>...</td>
+                        <td>3</td>
+                        <td>200</td>
+                        <td>
+                            <button type="button" class="btn btn-red-sm">刪除</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container" style="padding:0px; margin-bottom:20px;">
+        <div class="row">
+            <div class="col-12 text-right" style="padding:0px;">
+                <button class="btn text-white" style="background-color:#FF8800;width:90px; margin-right:10px;">取消</button>
+                <button class="btn btn-blue-sm">確定</button>
             </div>
         </div>
     </div>

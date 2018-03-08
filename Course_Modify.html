@@ -99,32 +99,49 @@
     <div class="col-12" style="margin-top:15px;">
         <div style="border-radius: 5px; background-color: #d2d2d2;">
             <div class="col-12 p-1">
-                <span>網站 &#62; 新聞</span>
+                <span>網站 &#62; 課程 &#62; 2017-01-11 : 13:25.315 (修改) </span>
             </div>
         </div>
     </div>
-    <div class="col-12 text-center" style="margin-top:4%;">
+    <div class="col-12 text-center" style="margin-top:6%;">
         <h3>2017-01-11：13：25.315 ( 修改 )</h3>
     </div>
-    <div class="col-12" style="margin-top: 4%; margin-bottom:20px;">
+    <div class="col-12" style="margin-bottom: 25px; margin-top:4%;">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-4">
                     <div class="row">
-                        <div class="col-md-3" style="text-align: right;padding: 6px 0 0 15px;">
+                        <div class="col-3" style="text-align: right;padding: 6px 0 0 15px;">
                             <h5>標題：</h5>
                         </div>
-                        <div class="col-md-9">
-                            <input type="text" class="form-control text-center" placeholder="請輸入標題" />
+                        <div class="col-9">
+                            <input type="text" class="form-control" />
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-4">
                     <div class="row">
-                        <div class="col-md-3" style="text-align: right;padding: 6px 0 0 15px;">
+                        <div class="col-4" style="text-align: right;padding: 6px 0 0 15px;">
+                            <h5>課程檔期：</h5>
+                        </div>
+                        <div class="col-8">
+                            <div class="input-group">
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected disabled>選擇課程檔期</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-4" style="text-align: right;padding: 6px 0 0 15px;">
                             <h5>圖片：</h5>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-8">
                             <input type="file" />
                         </div>
                     </div>
@@ -132,19 +149,59 @@
             </div>
         </div>
     </div>
-    c
+    <div class="col-12" style="margin-bottom: 25px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-3" style="text-align: right;padding: 6px 0 0 15px;">
+                            <h5>敘述：</h5>
+                        </div>
+                        <div class="col-9">
+                            <button type="button" class="btn btn-blue-md w-100">增加課程敘述</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-4" style="text-align: right;padding: 6px 0 0 15px;">
+                            <h5>價位：</h5>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-4" style="text-align: right;padding: 6px 0 0 0px;">
+                            <h5>課程截止日：</h5>
+                        </div>
+                        <div class="col-8">
+                            <div class="input-group">
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected disabled>選擇課程截止日</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="col-12" style="margin-bottom: 20px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="row">
-                        <div style="text-align: right;padding: 6px 0 0 15px;width: 12.5%;">
-                            <h5>
-                                內文：
-                            </h5>
+                        <div style="text-align: right;padding: 6px 3px 0 0;width: 8.5%;">
+                            <h5>內文：</h5>
                         </div>
-                        <div style="width: 87.5%;padding: 0 15px;">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" style="resize:none;"></textarea>
+                        <div style="width: 91.5%;padding: 0 15px;">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" style="resize:none;"></textarea>
                         </div>
                     </div>
                 </div>
@@ -156,8 +213,8 @@
             <div class="row">
                 <div class="col-12">
                     <div style="float: right;">
-                        <button type="button" class="btn btn-red-sm">取消</button>
-                        <button type="button" class="btn btn-blue-sm">確定修改</button>
+                        <button type="button" class="btn btn-green-sm">清除</button>
+                        <button type="button" class="btn btn-blue-sm">送出</button>
                     </div>
                     <div style="clear: both;"></div>
                 </div>
