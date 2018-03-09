@@ -15,7 +15,7 @@
     <style>
         tbody {
             display: block;
-            height: 650px;
+            height: 100px;
             overflow: auto;
         }
 
@@ -31,7 +31,8 @@
     </style>
     <script>
         $(function () {
-            $('tbody').css({ "height": $('body').height() - 230 });
+            var vbody = $(document).height() - 320;
+            $('tbody').css({ "height": vbody });
         });
     </script>
 </head>
@@ -123,14 +124,14 @@
             </div>
         </div>
     </div>
-    <div class="col-12" style="margin-top:2%;">
+    <div class="col-12" style="margin-top:40px;">
         <div class="row" style="padding-right:15px;">
             <div class="col-12 text-right">
                 <button type="button" class="btn btn-blue-md">單筆新增</button>
             </div>
         </div>
     </div>
-    <div class="col-12" style="margin-bottom: 2%; margin-top:20px;">
+    <div class="col-12" style="margin-bottom: 20px; margin-top:20px;">
         <table class="table table-hover  mb-4 tb">
             <thead class="thead-dark">
                 <tr>
@@ -143,7 +144,9 @@
                     <th scope="col">加購</th>
                     <th scope="col">分類</th>
                     <th scope="col">敘述</th>
-                    <th scope="col">價位/庫存/紅利</th>
+                    <th style="padding-left:0px; padding-right:0px; width:140px;">
+                        <span>價位/庫存/紅利</span>
+                    </th>
                     <th scope="col">上架時間</th>
                     <th scope="col">功能</th>
                 </tr>
@@ -154,31 +157,30 @@
                     <td>PD1233548</td>
                     <td>FFFF/SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>2580/200/3</td>
-                    <td>
+                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
+                    <td style="padding-left:0px; padding-right:0px;">
+                        <span> 2017-12-14</span>
                         <span>
-                            2017-12-14<br />13:00
+                            13:00
                         </span>
                     </td>
-                    <td>
-                        <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
-                        </div>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
                     </td>
                 </tr>
                 <tr>
@@ -186,31 +188,30 @@
                     <td>PD1233548</td>
                     <td>FFFF/SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>2580/200/3</td>
-                    <td>
+                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
+                    <td style="padding-left:0px; padding-right:0px;">
+                        <span> 2017-12-14</span>
                         <span>
-                            2017-12-14<br />13:00
+                            13:00
                         </span>
                     </td>
-                    <td>
-                        <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
-                        </div>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
                     </td>
                 </tr>
                 <tr>
@@ -218,31 +219,30 @@
                     <td>PD1233548</td>
                     <td>FFFF/SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>2580/200/3</td>
-                    <td>
+                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
+                    <td style="padding-left:0px; padding-right:0px;">
+                        <span> 2017-12-14</span>
                         <span>
-                            2017-12-14<br />13:00
+                            13:00
                         </span>
                     </td>
-                    <td>
-                        <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
-                        </div>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
                     </td>
                 </tr>
                 <tr>
@@ -250,31 +250,30 @@
                     <td>PD1233548</td>
                     <td>FFFF/SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>2580/200/3</td>
-                    <td>
+                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
+                    <td style="padding-left:0px; padding-right:0px;">
+                        <span> 2017-12-14</span>
                         <span>
-                            2017-12-14<br />13:00
+                            13:00
                         </span>
                     </td>
-                    <td>
-                        <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
-                        </div>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
                     </td>
                 </tr>
                 <tr>
@@ -282,31 +281,30 @@
                     <td>PD1233548</td>
                     <td>FFFF/SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>2580/200/3</td>
-                    <td>
+                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
+                    <td style="padding-left:0px; padding-right:0px;">
+                        <span> 2017-12-14</span>
                         <span>
-                            2017-12-14<br />13:00
+                            13:00
                         </span>
                     </td>
-                    <td>
-                        <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
-                        </div>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
                     </td>
                 </tr>
                 <tr>
@@ -314,31 +312,30 @@
                     <td>PD1233548</td>
                     <td>FFFF/SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>2580/200/3</td>
-                    <td>
+                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
+                    <td style="padding-left:0px; padding-right:0px;">
+                        <span> 2017-12-14</span>
                         <span>
-                            2017-12-14<br />13:00
+                            13:00
                         </span>
                     </td>
-                    <td>
-                        <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
-                        </div>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
                     </td>
                 </tr>
                 <tr>
@@ -346,31 +343,30 @@
                     <td>PD1233548</td>
                     <td>FFFF/SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>2580/200/3</td>
-                    <td>
+                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
+                    <td style="padding-left:0px; padding-right:0px;">
+                        <span> 2017-12-14</span>
                         <span>
-                            2017-12-14<br />13:00
+                            13:00
                         </span>
                     </td>
-                    <td>
-                        <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
-                        </div>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
                     </td>
                 </tr>
                 <tr>
@@ -378,31 +374,30 @@
                     <td>PD1233548</td>
                     <td>FFFF/SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>2580/200/3</td>
-                    <td>
+                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
+                    <td style="padding-left:0px; padding-right:0px;">
+                        <span> 2017-12-14</span>
                         <span>
-                            2017-12-14<br />13:00
+                            13:00
                         </span>
                     </td>
-                    <td>
-                        <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
-                        </div>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
                     </td>
                 </tr>
                 <tr>
@@ -410,31 +405,30 @@
                     <td>PD1233548</td>
                     <td>FFFF/SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>2580/200/3</td>
-                    <td>
+                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
+                    <td style="padding-left:0px; padding-right:0px;">
+                        <span> 2017-12-14</span>
                         <span>
-                            2017-12-14<br />13:00
+                            13:00
                         </span>
                     </td>
-                    <td>
-                        <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
-                        </div>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
                     </td>
                 </tr>
                 <tr>
@@ -442,31 +436,30 @@
                     <td>PD1233548</td>
                     <td>FFFF/SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>2580/200/3</td>
-                    <td>
+                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
+                    <td style="padding-left:0px; padding-right:0px;">
+                        <span> 2017-12-14</span>
                         <span>
-                            2017-12-14<br />13:00
+                            13:00
                         </span>
                     </td>
-                    <td>
-                        <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
-                        </div>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
                     </td>
                 </tr>
                 <tr>
@@ -474,31 +467,61 @@
                     <td>PD1233548</td>
                     <td>FFFF/SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>2580/200/3</td>
-                    <td>
+                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
+                    <td style="padding-left:0px; padding-right:0px;">
+                        <span> 2017-12-14</span>
                         <span>
-                            2017-12-14<br />13:00
+                            13:00
                         </span>
                     </td>
-                    <td>
-                        <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
-                        </div>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>00000</td>
+                    <td>PD1233548</td>
+                    <td>FFFF/SSSSS</td>
+                    <td>AAAAAA</td>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
+                    </td>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
+                    </td>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
+                    </td>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
+                    </td>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
+                    </td>
+                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
+                    <td style="padding-left:0px; padding-right:0px;">
+                        <span> 2017-12-14</span>
+                        <span>
+                            13:00
+                        </span>
+                    </td>
+                    <td style="padding-left:15px; padding-right:15px;">
+                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
                     </td>
                 </tr>
             </tbody>

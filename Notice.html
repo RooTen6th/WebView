@@ -31,6 +31,12 @@
             width: calc( 100% - 1em)
         }
     </style>
+    <script>
+        $(function () {
+            var vbody = $(document).height() - 600;
+            $('tbody').css({ "height": vbody });
+        });
+    </script>
 </head>
 <body>
     <div class="col-12">
@@ -150,55 +156,54 @@
                     <td>22/500</td>
                     <td>https://123123123</td>
                     <td>
-                        <button type="button" class="btn btn-green-sm">修改</button>
-                        <button type="button" class="btn btn-red-sm">刪除</button>
+                        <button type="button" class="btn btn-green-sm my-1">修改</button>
+                        <button type="button" class="btn btn-red-sm my-1">刪除</button>
                     </td>
                 </tr>
                 <tr>
                     <td>2017-01-11：13:25.315</td>
-                    <td>寵物名稱</td>
-                    <td>VVVV</td>
+                    <td>性別</td>
+                    <td>AAAA</td>
                     <td>22/500</td>
                     <td>https://123123123</td>
                     <td>
-                        <button type="button" class="btn btn-green-sm">修改</button>
-                        <button type="button" class="btn btn-red-sm">刪除</button>
+                        <button type="button" class="btn btn-green-sm my-1">修改</button>
+                        <button type="button" class="btn btn-red-sm my-1">刪除</button>
                     </td>
                 </tr>
                 <tr>
                     <td>2017-01-11：13:25.315</td>
-                    <td>寵物類型</td>
-                    <td>VVVV</td>
+                    <td>性別</td>
+                    <td>AAAA</td>
                     <td>22/500</td>
                     <td>https://123123123</td>
                     <td>
-                        <button type="button" class="btn btn-green-sm">修改</button>
-                        <button type="button" class="btn btn-red-sm">刪除</button>
+                        <button type="button" class="btn btn-green-sm my-1">修改</button>
+                        <button type="button" class="btn btn-red-sm my-1">刪除</button>
                     </td>
                 </tr>
                 <tr>
                     <td>2017-01-11：13:25.315</td>
-                    <td>全體</td>
-                    <td>VVVV</td>
+                    <td>性別</td>
+                    <td>AAAA</td>
                     <td>22/500</td>
                     <td>https://123123123</td>
                     <td>
-                        <button type="button" class="btn btn-green-sm">修改</button>
-                        <button type="button" class="btn btn-red-sm">刪除</button>
+                        <button type="button" class="btn btn-green-sm my-1">修改</button>
+                        <button type="button" class="btn btn-red-sm my-1">刪除</button>
                     </td>
                 </tr>
                 <tr>
                     <td>2017-01-11：13:25.315</td>
-                    <td>電話</td>
-                    <td>VVVV</td>
+                    <td>性別</td>
+                    <td>AAAA</td>
                     <td>22/500</td>
                     <td>https://123123123</td>
                     <td>
-                        <button type="button" class="btn btn-green-sm">修改</button>
-                        <button type="button" class="btn btn-red-sm">刪除</button>
+                        <button type="button" class="btn btn-green-sm my-1">修改</button>
+                        <button type="button" class="btn btn-red-sm my-1">刪除</button>
                     </td>
                 </tr>
-
             </tbody>
         </table>
     </div>
@@ -293,7 +298,7 @@
                             <h5>連結：</h5>
                         </div>
                         <div class="col-10" style="padding-right:0px;">
-                            <input type="text" class="form-control" placeholder="https://123123123.com" />
+                            <input type="text" class="form-control text-center" placeholder="請輸入連結" />
                         </div>
                     </div>
                 </div>

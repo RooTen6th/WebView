@@ -15,7 +15,7 @@
     <style>
         tbody {
             display: block;
-            height: 370px;
+            height: 100px;
             overflow: auto;
         }
 
@@ -31,7 +31,8 @@
     </style>
     <script>
         $(function () {
-            $('tbody').css({ "height": $('body').height() - 430 });
+            var vbody = $(document).height() - 540;
+            $('tbody').css({ "height": vbody });
         });
     </script>
 </head>
@@ -150,7 +151,7 @@
                 </div>
             </div>
             <div class="row mt-2" style="margin-bottom:2%;">
-                <div class="col-3" style="">
+                <div class="col-3">
                     <div class="row">
                         <div class="col-3" style="">
                             <input type="text" readonly class="form-control-plaintext text-right" value="信箱：">
@@ -160,7 +161,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3" style="">
+                <div class="col-3">
                     <div class="row">
                         <div class="col-3" style="">
                             <input type="text" readonly class="form-control-plaintext text-right" value="手機：">
@@ -170,7 +171,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3" style="">
+                <div class="col-3">
                     <div class="row">
                         <div class="col-5" style="padding:0px;">
                             <input type="text" readonly class="form-control-plaintext text-right" value="剩餘簡訊數量：">
@@ -180,7 +181,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3" style="">
+                <div class="col-3">
                     <div class="row">
                         <div class="col-6" style="padding-left:35px">
                             <button type="button" class="btn btn-info" style="width:105px;">資料修改</button>
@@ -237,8 +238,8 @@
                     <td>人不錯,很好...</td>
                     <td>2017-11-10</td>
                     <td>
-                        <button class="btn btn-red-sm">刪除</button>
-                        <button class="btn btn-green-sm">修改</button>
+                        <button class="btn btn-red-sm my-1">刪除</button>
+                        <button class="btn btn-green-sm my-1">修改</button>
                     </td>
                 </tr>
                 <tr>
@@ -250,8 +251,8 @@
                     <td>人不錯,很好...</td>
                     <td>2017-11-10</td>
                     <td>
-                        <button class="btn btn-red-sm">刪除</button>
-                        <button class="btn btn-green-sm">修改</button>
+                        <button class="btn btn-red-sm my-1">刪除</button>
+                        <button class="btn btn-green-sm my-1">修改</button>
                     </td>
                 </tr>
                 <tr>
@@ -263,8 +264,8 @@
                     <td>人不錯,很好...</td>
                     <td>2017-11-10</td>
                     <td>
-                        <button class="btn btn-red-sm">刪除</button>
-                        <button class="btn btn-green-sm">修改</button>
+                        <button class="btn btn-red-sm my-1">刪除</button>
+                        <button class="btn btn-green-sm my-1">修改</button>
                     </td>
                 </tr>
                 <tr>
@@ -276,8 +277,8 @@
                     <td>人不錯,很好...</td>
                     <td>2017-11-10</td>
                     <td>
-                        <button class="btn btn-red-sm">刪除</button>
-                        <button class="btn btn-green-sm">修改</button>
+                        <button class="btn btn-red-sm my-1">刪除</button>
+                        <button class="btn btn-green-sm my-1">修改</button>
                     </td>
                 </tr>
                 <tr>
@@ -289,8 +290,8 @@
                     <td>人不錯,很好...</td>
                     <td>2017-11-10</td>
                     <td>
-                        <button class="btn btn-red-sm">刪除</button>
-                        <button class="btn btn-green-sm">修改</button>
+                        <button class="btn btn-red-sm my-1">刪除</button>
+                        <button class="btn btn-green-sm my-1">修改</button>
                     </td>
                 </tr>
                 <tr>
@@ -302,21 +303,8 @@
                     <td>人不錯,很好...</td>
                     <td>2017-11-10</td>
                     <td>
-                        <button class="btn btn-red-sm">刪除</button>
-                        <button class="btn btn-green-sm">修改</button>
-                    </td>
-                </tr>
-                <tr class="text-center text-middle">
-                    <td>鄒年寶</td>
-                    <td>0123456789</td>
-                    <td>3213131</td>
-                    <td>123@gmail.com</td>
-                    <td>2017-10-31</td>
-                    <td>人不錯,很好...</td>
-                    <td>2017-11-10</td>
-                    <td>
-                        <button class="btn btn-red-sm">刪除</button>
-                        <button class="btn btn-green-sm">修改</button>
+                        <button class="btn btn-red-sm my-1">刪除</button>
+                        <button class="btn btn-green-sm my-1">修改</button>
                     </td>
                 </tr>
                 <tr>
@@ -328,8 +316,8 @@
                     <td>人不錯,很好...</td>
                     <td>2017-11-10</td>
                     <td>
-                        <button class="btn btn-red-sm">刪除</button>
-                        <button class="btn btn-green-sm">修改</button>
+                        <button class="btn btn-red-sm my-1">刪除</button>
+                        <button class="btn btn-green-sm my-1">修改</button>
                     </td>
                 </tr>
                 <tr>
@@ -341,8 +329,34 @@
                     <td>人不錯,很好...</td>
                     <td>2017-11-10</td>
                     <td>
-                        <button class="btn btn-red-sm">刪除</button>
-                        <button class="btn btn-green-sm">修改</button>
+                        <button class="btn btn-red-sm my-1">刪除</button>
+                        <button class="btn btn-green-sm my-1">修改</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>鄒年寶</td>
+                    <td>0123456789</td>
+                    <td>3213131</td>
+                    <td>123@gmail.com</td>
+                    <td>2017-10-31</td>
+                    <td>人不錯,很好...</td>
+                    <td>2017-11-10</td>
+                    <td>
+                        <button class="btn btn-red-sm my-1">刪除</button>
+                        <button class="btn btn-green-sm my-1">修改</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>鄒年寶</td>
+                    <td>0123456789</td>
+                    <td>3213131</td>
+                    <td>123@gmail.com</td>
+                    <td>2017-10-31</td>
+                    <td>人不錯,很好...</td>
+                    <td>2017-11-10</td>
+                    <td>
+                        <button class="btn btn-red-sm my-1">刪除</button>
+                        <button class="btn btn-green-sm my-1">修改</button>
                     </td>
                 </tr>
             </tbody>

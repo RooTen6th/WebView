@@ -35,7 +35,8 @@
     </style>
     <script>
         $(function () {
-            $('tbody').css({ "height": $('body').height() - 320 });
+            var vbody = $(document).height() - 360;
+            $('tbody').css({ "height": vbody });
         });
     </script>
 </head>
@@ -179,15 +180,15 @@
     </div>
     <div class="col-12" style="margin-top:20px;">
         <div class="row">
-            <div class="offset-8 col-4">
-                <div class="row">
-                    <div class="offset-1 col-3 text-right" style="padding-right:0px;">
+            <div class="offset-7 col-5">
+                <div class="row"style="padding-right:30px;">
+                    <div class="col-4 text-right" style="padding-right:0px;">
                         <p style="font-size:1.4em;">商品特搜：</p>
                     </div>
                     <div class="col-5" style="padding:0px;">
                         <input type="text" class="form-control text-center" placeholder="輸入商品名稱、編號" />
                     </div>
-                    <div class="col-2 text-right" style="padding-right:0px;">
+                    <div class="col-3 text-right" style="padding-right:0px;">
                         <button type="button" class="btn btn-blue-sm w-100">搜尋</button>
                     </div>
                 </div>
@@ -209,7 +210,7 @@
                     <th scope="col">敘述</th>
                     <th scope="col">價位</th>
                     <th scope="col">紅利</th>
-                    <th scope="col">上架時間</th>
+                    <th scope="col" style="padding-left:0px; padding-right:0px;">上架時間</th>
                     <th scope="col">庫存</th>
                     <th scope="col">功能</th>
                 </tr>
@@ -220,24 +221,24 @@
                     <td>FFFF</td>
                     <td>SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
                     <td>2580</td>
                     <td>3</td>
-                    <td>
+                    <td style="padding-left:2px;padding-right:2px;">
                         <span>
                             2017-12-14
                         </span>
@@ -246,16 +247,16 @@
                         </span>
                     </td>
                     <td>200</td>
-                    <td>
+                    <td style="padding:10px;">
                         <div>
-                            <button type="button" class="btn btn-purple-sm">下架</button>
+                            <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100">修改</button>
 
                         </div>
                         <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
+                            <button type="button" class="btn btn-red-sm w-100">刪除</button>
                         </div>
                     </td>
                 </tr>
@@ -264,24 +265,24 @@
                     <td>FFFF</td>
                     <td>SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
                     <td>2580</td>
                     <td>3</td>
-                    <td>
+                    <td style="padding-left:2px;padding-right:2px;">
                         <span>
                             2017-12-14
                         </span>
@@ -290,16 +291,16 @@
                         </span>
                     </td>
                     <td>200</td>
-                    <td>
+                    <td style="padding:10px;">
                         <div>
-                            <button type="button" class="btn btn-purple-sm">下架</button>
+                            <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100">修改</button>
 
                         </div>
                         <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
+                            <button type="button" class="btn btn-red-sm w-100">刪除</button>
                         </div>
                     </td>
                 </tr>
@@ -308,24 +309,24 @@
                     <td>FFFF</td>
                     <td>SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
                     <td>2580</td>
                     <td>3</td>
-                    <td>
+                    <td style="padding-left:2px;padding-right:2px;">
                         <span>
                             2017-12-14
                         </span>
@@ -334,16 +335,16 @@
                         </span>
                     </td>
                     <td>200</td>
-                    <td>
+                    <td style="padding:10px;">
                         <div>
-                            <button type="button" class="btn btn-purple-sm">下架</button>
+                            <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100">修改</button>
 
                         </div>
                         <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
+                            <button type="button" class="btn btn-red-sm w-100">刪除</button>
                         </div>
                     </td>
                 </tr>
@@ -352,24 +353,24 @@
                     <td>FFFF</td>
                     <td>SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
                     <td>2580</td>
                     <td>3</td>
-                    <td>
+                    <td style="padding-left:2px;padding-right:2px;">
                         <span>
                             2017-12-14
                         </span>
@@ -378,16 +379,16 @@
                         </span>
                     </td>
                     <td>200</td>
-                    <td>
+                    <td style="padding:10px;">
                         <div>
-                            <button type="button" class="btn btn-purple-sm">下架</button>
+                            <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100">修改</button>
 
                         </div>
                         <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
+                            <button type="button" class="btn btn-red-sm w-100">刪除</button>
                         </div>
                     </td>
                 </tr>
@@ -396,24 +397,24 @@
                     <td>FFFF</td>
                     <td>SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
                     <td>2580</td>
                     <td>3</td>
-                    <td>
+                    <td style="padding-left:2px;padding-right:2px;">
                         <span>
                             2017-12-14
                         </span>
@@ -422,16 +423,16 @@
                         </span>
                     </td>
                     <td>200</td>
-                    <td>
+                    <td style="padding:10px;">
                         <div>
-                            <button type="button" class="btn btn-purple-sm">下架</button>
+                            <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100">修改</button>
 
                         </div>
                         <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
+                            <button type="button" class="btn btn-red-sm w-100">刪除</button>
                         </div>
                     </td>
                 </tr>
@@ -440,24 +441,24 @@
                     <td>FFFF</td>
                     <td>SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
                     <td>2580</td>
                     <td>3</td>
-                    <td>
+                    <td style="padding-left:2px;padding-right:2px;">
                         <span>
                             2017-12-14
                         </span>
@@ -466,16 +467,16 @@
                         </span>
                     </td>
                     <td>200</td>
-                    <td>
+                    <td style="padding:10px;">
                         <div>
-                            <button type="button" class="btn btn-purple-sm">下架</button>
+                            <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100">修改</button>
 
                         </div>
                         <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
+                            <button type="button" class="btn btn-red-sm w-100">刪除</button>
                         </div>
                     </td>
                 </tr>
@@ -484,24 +485,24 @@
                     <td>FFFF</td>
                     <td>SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
                     <td>2580</td>
                     <td>3</td>
-                    <td>
+                    <td style="padding-left:2px;padding-right:2px;">
                         <span>
                             2017-12-14
                         </span>
@@ -510,16 +511,16 @@
                         </span>
                     </td>
                     <td>200</td>
-                    <td>
+                    <td style="padding:10px;">
                         <div>
-                            <button type="button" class="btn btn-purple-sm">下架</button>
+                            <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100">修改</button>
 
                         </div>
                         <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
+                            <button type="button" class="btn btn-red-sm w-100">刪除</button>
                         </div>
                     </td>
                 </tr>
@@ -528,24 +529,24 @@
                     <td>FFFF</td>
                     <td>SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
                     <td>2580</td>
                     <td>3</td>
-                    <td>
+                    <td style="padding-left:2px;padding-right:2px;">
                         <span>
                             2017-12-14
                         </span>
@@ -554,16 +555,16 @@
                         </span>
                     </td>
                     <td>200</td>
-                    <td>
+                    <td style="padding:10px;">
                         <div>
-                            <button type="button" class="btn btn-purple-sm">下架</button>
+                            <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100">修改</button>
 
                         </div>
                         <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
+                            <button type="button" class="btn btn-red-sm w-100">刪除</button>
                         </div>
                     </td>
                 </tr>
@@ -572,24 +573,24 @@
                     <td>FFFF</td>
                     <td>SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
                     <td>2580</td>
                     <td>3</td>
-                    <td>
+                    <td style="padding-left:2px;padding-right:2px;">
                         <span>
                             2017-12-14
                         </span>
@@ -598,16 +599,16 @@
                         </span>
                     </td>
                     <td>200</td>
-                    <td>
+                    <td style="padding:10px;">
                         <div>
-                            <button type="button" class="btn btn-purple-sm">下架</button>
+                            <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100">修改</button>
 
                         </div>
                         <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
+                            <button type="button" class="btn btn-red-sm w-100">刪除</button>
                         </div>
                     </td>
                 </tr>
@@ -616,24 +617,24 @@
                     <td>FFFF</td>
                     <td>SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
                     <td>2580</td>
                     <td>3</td>
-                    <td>
+                    <td style="padding-left:2px;padding-right:2px;">
                         <span>
                             2017-12-14
                         </span>
@@ -642,16 +643,16 @@
                         </span>
                     </td>
                     <td>200</td>
-                    <td>
+                    <td style="padding:10px;">
                         <div>
-                            <button type="button" class="btn btn-purple-sm">下架</button>
+                            <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100">修改</button>
 
                         </div>
                         <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
+                            <button type="button" class="btn btn-red-sm w-100">刪除</button>
                         </div>
                     </td>
                 </tr>
@@ -660,24 +661,24 @@
                     <td>FFFF</td>
                     <td>SSSSS</td>
                     <td>AAAAAA</td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-blue-sm">顯示</button>
+                    <td style="padding-left:10px;padding-right:10px;">
+                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
                     </td>
                     <td>2580</td>
                     <td>3</td>
-                    <td>
+                    <td style="padding-left:2px;padding-right:2px;">
                         <span>
                             2017-12-14
                         </span>
@@ -686,16 +687,16 @@
                         </span>
                     </td>
                     <td>200</td>
-                    <td>
+                    <td style="padding:10px;">
                         <div>
-                            <button type="button" class="btn btn-purple-sm">下架</button>
+                            <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100">修改</button>
 
                         </div>
                         <div>
-                            <button type="button" class="btn btn-red-sm">刪除</button>
+                            <button type="button" class="btn btn-red-sm w-100">刪除</button>
                         </div>
                     </td>
                 </tr>

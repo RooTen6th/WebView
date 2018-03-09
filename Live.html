@@ -17,7 +17,7 @@
     <style>
         tbody {
             display: block;
-            height: 380px;
+            height: 100px;
             overflow: auto;
         }
 
@@ -31,6 +31,12 @@
             width: calc( 100% - 1em )
         }
     </style>
+    <script>
+        $(function () {
+            var vbody = $(document).height() - 570;
+            $('tbody').css({ "height": vbody });
+        });
+    </script>
 </head>
 <body>
     <div class="col-12">
@@ -70,7 +76,6 @@
                                 商店
                                 <span class="dropdown-toggle" style="float:right;"></span>
                             </a>
-
                             <div class="dropdown-menu dropdown-">
                                 <a class="dropdown-item" href="/store.html">商店</a>
                                 <a class="dropdown-item" href="/AddProduct.html">新增商品</a>

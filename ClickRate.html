@@ -29,6 +29,12 @@
             width: calc( 100% - 1em)
         }
     </style>
+    <script>
+        $(function () {
+            var vbody = $(document).height() - 250;
+            $('tbody').css({ "height": vbody });
+        });
+    </script>
 </head>
 <body>
     <div class="col-12">
