@@ -15,7 +15,7 @@
     <style>
         tbody {
             display: block;
-            height: 620px;
+            height: 100px;
             overflow: auto;
         }
 
@@ -35,9 +35,14 @@
     </style>
     <script>
         $(function () {
-            var vbody = $(document).height() - 420;
+            var vbody = $(document).height() - 380;
             $('tbody').css({ "height": vbody });
         });
+
+        //Modal
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
     </script>
 </head>
 <body>
@@ -130,65 +135,189 @@
     </div>
     <div class="container" style="margin-top:20px;">
         <div class="row">
-            <div class="col-3">
-                <div class="row">
-                    <div class="col-6 text-center" style="padding-right:0px; ">
-                        <p style="font-size:1.4em;">全館折扣：</p>
-                    </div>
-                    <div class="col-2" style="padding:0 0px 0 0px;">
-                        <input type="text" class="form-control text-center" placeholder="9" />
-                    </div>
-                    <div class="col-4">
-                        <button type="button" class="btn w-100 color-g text-light">修改</button>
+            <div class="offset-2 col-2 text-center" style="padding:0 20px;">
+                <button type="button" class="btn text-white color-g w-100" data-toggle="modal" data-target="#exampleModal">全館折扣(不啟動)</button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">全館折扣</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row" style="margin-top:20px;">
+                                    <div style="width:50%; text-align:right; font-size:1.2em; margin-top:5px;">全館折扣折數：</div>
+                                    <div style="width:30%;">
+                                        <input type="text" class="form-control text-center" style="" placeholder="請輸入折扣折數" />
+                                    </div>
+                                </div>
+                                <div class="row" style="margin:20px 0 20px 0;">
+                                    <div style="width:50%;">
+                                        <div style="font-size:1.2em; text-align:right;" >全館折扣是否啟動：</div>
+                                    </div>
+                                    <div style="width:50%; text-align:left;padding-top:5px;">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1" style="margin-top:10px;">
+                                            <label class="custom-control-label"  for="customCheck1"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info" data-dismiss="modal" style="width:80px;">取消</button>
+                                <button type="button" class="btn color-b text-white" style="width:80px;">修改</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-3 border-left">
-                <div class="row">
-                    <div class="col-6 text-center" style="padding-right:0px; ">
-                        <p style="font-size:1.4em;">2件N折：</p>
-                    </div>
-                    <div class="col-2" style="padding:0 0px 0 0px;">
-                        <input type="text" class="form-control text-center" placeholder="9" />
-                    </div>
-                    <div class="col-4">
-                        <button type="button" class="btn w-100 color-g text-light">修改</button>
+            <div class="col-2 text-center" style="padding:0 20px;">
+                <button type="button" class="btn text-white color-g w-100" data-toggle="modal" data-target="#exampleModal2">第二件折扣(啟動)</button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">第二件折扣</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row" style="margin-top:20px;">
+                                    <div style="width:50%; text-align:right; font-size:1.2em; margin-top:5px;">第二件折扣折數：</div>
+                                    <div style="width:30%;">
+                                        <input type="text" class="form-control text-center" style="" placeholder="請輸入折扣折數" />
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top:20px;">
+                                    <div style="width:50%; text-align:right; font-size:1.2em; margin-top:5px;">折扣商品：</div>
+                                    <div style="width:30%;">
+                                        <div class="input-group">
+                                            <select class="custom-select">
+                                                <option selected>選擇商品</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin:20px 0 20px 0;">
+                                    <div style="width:50%;">
+                                        <div style="font-size:1.2em; text-align:right;">第二件折扣是否啟動：</div>
+                                    </div>
+                                    <div style="width:50%; text-align:left;padding-top:5px;">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2" style="margin-top:10px;">
+                                            <label class="custom-control-label" for="customCheck2"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info" data-dismiss="modal" style="width:80px;">取消</button>
+                                <button type="button" class="btn color-b text-white" style="width:80px;">修改</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-3 border-left">
-                <div class="row">
-                    <div class="col-6 text-center" style="padding-right:0px; ">
-                        <p style="font-size:1.4em;">買2000折：</p>
-                    </div>
-                    <div class="col-2" style="padding:0 0px 0 0px;">
-                        <input type="text" class="form-control text-center" placeholder="9" />
-                    </div>
-                    <div class="col-4">
-                        <button type="button" class="btn w-100 color-g text-light">修改</button>
+            <div class="col-2 text-center" style="padding:0 20px;">
+                <button type="button" class="btn text-white color-g w-100" data-toggle="modal" data-target="#exampleModal3">滿額折扣(啟動)</button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">滿額折扣</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row" style="margin-top:20px;">
+                                    <div style="width:50%; text-align:right; font-size:1.2em; margin-top:5px;">滿額折扣折數：</div>
+                                    <div style="width:30%;">
+                                        <input type="text" class="form-control text-center" style="" placeholder="請輸入折扣折數" />
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top:20px;">
+                                    <div style="width:50%; text-align:right; font-size:1.2em; margin-top:5px;">滿多少：</div>
+                                    <div style="width:30%;">
+                                        <input type="text" class="form-control text-center" style="" placeholder="請輸入金額" />
+                                    </div>
+                                </div>
+                                <div class="row" style="margin:20px 0 20px 0;">
+                                    <div style="width:50%;">
+                                        <div style="font-size:1.2em; text-align:right;">滿額折扣是否啟動：</div>
+                                    </div>
+                                    <div style="width:50%; text-align:left;padding-top:5px;">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3" style="margin-top:10px;">
+                                            <label class="custom-control-label" for="customCheck3"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info" data-dismiss="modal" style="width:80px;">取消</button>
+                                <button type="button" class="btn color-b text-white" style="width:80px;">修改</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-3 border-left">
-                <div class="row">
-                    <div class="col-12 text-center" style="padding-right:0px;">
-                        <p style="font-size:1.4em;">100元：1紅利</p>
+            <div class="col-2 text-center" style="padding:0 20px;">
+                <button type="button" class="btn text-white color-g w-100" data-toggle="modal" data-target="#exampleModal4">紅利比例</button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">紅利比例</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row" style="margin-top:20px;">
+                                    <div style="width:45%; text-align:right; font-size:1.2em; margin-top:5px;">紅利比例：</div>
+                                    <div style="width:30%;">
+                                        <input type="text" class="form-control text-center" style="" placeholder="請輸入比例" />
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top:20px;">
+                                    <div style="width:45%; text-align:right; font-size:1.2em; margin-top:5px;">金額：</div>
+                                    <div style="width:30%;">
+                                        <input type="text" class="form-control text-center" style="" placeholder="請輸入金額" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info" data-dismiss="modal" style="width:80px;">取消</button>
+                                <button type="button" class="btn color-b text-white" style="width:80px;">修改</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-12" style="margin-top:20px;">
+    <div class="col-12" style="margin-top:30px;">
         <div class="row">
             <div class="offset-7 col-5">
-                <div class="row"style="padding-right:30px;">
-                    <div class="col-4 text-right" style="padding-right:0px;">
+                <div class="row" style="padding-right:30px;">
+                    <div class="col-5 text-right" style="padding-right:0px;">
                         <p style="font-size:1.4em;">商品特搜：</p>
                     </div>
                     <div class="col-5" style="padding:0px;">
                         <input type="text" class="form-control text-center" placeholder="輸入商品名稱、編號" />
                     </div>
-                    <div class="col-3 text-right" style="padding-right:0px;">
+                    <div class="col-2 text-right" style="padding-right:0px;">
                         <button type="button" class="btn btn-blue-sm w-100">搜尋</button>
                     </div>
                 </div>
@@ -252,7 +381,7 @@
                             <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm w-100">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100" onclick="javascript:location.href='/Store_Modify.html'">修改</button>
 
                         </div>
                         <div>
@@ -296,7 +425,7 @@
                             <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm w-100">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100" onclick="javascript:location.href='/Store_Modify.html'">修改</button>
 
                         </div>
                         <div>
@@ -340,7 +469,7 @@
                             <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm w-100">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100" onclick="javascript:location.href='/Store_Modify.html'">修改</button>
 
                         </div>
                         <div>
@@ -384,7 +513,7 @@
                             <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm w-100">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100" onclick="javascript:location.href='/Store_Modify.html'">修改</button>
 
                         </div>
                         <div>
@@ -428,7 +557,7 @@
                             <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm w-100">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100" onclick="javascript:location.href='/Store_Modify.html'">修改</button>
 
                         </div>
                         <div>
@@ -472,7 +601,7 @@
                             <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm w-100">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100" onclick="javascript:location.href='/Store_Modify.html'">修改</button>
 
                         </div>
                         <div>
@@ -516,7 +645,7 @@
                             <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm w-100">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100" onclick="javascript:location.href='/Store_Modify.html'">修改</button>
 
                         </div>
                         <div>
@@ -560,7 +689,7 @@
                             <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm w-100">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100" onclick="javascript:location.href='/Store_Modify.html'">修改</button>
 
                         </div>
                         <div>
@@ -604,7 +733,7 @@
                             <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm w-100">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100" onclick="javascript:location.href='/Store_Modify.html'">修改</button>
 
                         </div>
                         <div>
@@ -648,7 +777,7 @@
                             <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm w-100">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100" onclick="javascript:location.href='/Store_Modify.html'">修改</button>
 
                         </div>
                         <div>
@@ -692,7 +821,7 @@
                             <button type="button" class="btn btn-purple-sm w-100">下架</button>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-green-sm w-100">修改</button>
+                            <button type="button" class="btn btn-green-sm w-100" onclick="javascript:location.href='/Store_Modify.html'">修改</button>
 
                         </div>
                         <div>
