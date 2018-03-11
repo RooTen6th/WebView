@@ -30,11 +30,15 @@
         thead {
             width: calc( 100% - 1em)
         }
+
+        #modaltableheight {
+            height: 300px;
+        }
     </style>
     <script>
         $(function () {
-            var vbody = $(document).height()-330;
-            $('tbody').css({ "height": vbody});
+            var vbody = $(document).height() - 330;
+            $('#tbodyHeight').css({ "height": vbody });
         });
     </script>
 </head>
@@ -159,12 +163,144 @@
                     <th scope="col">功能</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="tbodyHeight">
                 <tr>
                     <td>ORDER-000001</td>
                     <td>132503131</td>
                     <td>
-                        <button class="btn btn-primary btn-blue-md">顯示</button>
+                        <button class="btn btn-primary btn-blue-md" data-toggle="modal" data-target="#display">顯示</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="display" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top:10%;">
+                            <div class="modal-dialog modal-lg" role="document" style="max-width:900px;">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">商品顯示</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <table class="table table-hover">
+                                            <thead class="thead-dark">
+                                                <tr class="text-center">
+                                                    <th scope="col">訂單編號</th>
+                                                    <th scope="col">會員編號</th>
+                                                    <th scope="col">交易狀態</th>
+                                                    <th scope="col">商品狀態</th>
+                                                    <th scope="col">訂購時間</th>
+                                                    <th scope="col">抵達時間</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="modaltableheight">
+                                                <tr>
+                                                    <td>ORDER-000001</td>
+                                                    <td>132503131</td>
+                                                    <td class="text-success">交易成功</td>
+                                                    <td class="text-success">已出貨</td>
+                                                    <td>
+                                                        <div>2017-12-22</div>
+                                                        <div>13.25.123</div>
+                                                    </td>
+                                                    <td>2017-12-22</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ORDER-000002</td>
+                                                    <td>31215123</td>
+                                                    <td class="text-danger">交易失敗</td>
+                                                    <td class="text-danger">未出貨</td>
+                                                    <td>
+                                                        <div>2017-12-22</div>
+                                                        <div>13.25.123</div>
+                                                    </td>
+                                                    <td>2017-12-22</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ORDER-000002</td>
+                                                    <td>31215123</td>
+                                                    <td class="text-muted">處理中</td>
+                                                    <td class="text-muted">處理中</td>
+                                                    <td>
+                                                        <div>2017-12-22</div>
+                                                        <div>13.25.123</div>
+                                                    </td>
+                                                    <td>2017-12-22</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ORDER-000001</td>
+                                                    <td>132503131</td>
+                                                    <td class="text-success">交易成功</td>
+                                                    <td class="text-success">已出貨</td>
+                                                    <td>
+                                                        <div>2017-12-22</div>
+                                                        <div>13.25.123</div>
+                                                    </td>
+                                                    <td>2017-12-22</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ORDER-000002</td>
+                                                    <td>31215123</td>
+                                                    <td class="text-danger">交易失敗</td>
+                                                    <td class="text-danger">未出貨</td>
+                                                    <td>
+                                                        <div>2017-12-22</div>
+                                                        <div>13.25.123</div>
+                                                    </td>
+                                                    <td>2017-12-22</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ORDER-000002</td>
+                                                    <td>31215123</td>
+                                                    <td class="text-muted">處理中</td>
+                                                    <td class="text-muted">處理中</td>
+                                                    <td>
+                                                        <div>2017-12-22</div>
+                                                        <div>13.25.123</div>
+                                                    </td>
+                                                    <td>2017-12-22</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ORDER-000001</td>
+                                                    <td>132503131</td>
+                                                    <td class="text-success">交易成功</td>
+                                                    <td class="text-success">已出貨</td>
+                                                    <td>
+                                                        <div>2017-12-22</div>
+                                                        <div>13.25.123</div>
+                                                    </td>
+                                                    <td>2017-12-22</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ORDER-000002</td>
+                                                    <td>31215123</td>
+                                                    <td class="text-danger">交易失敗</td>
+                                                    <td class="text-danger">未出貨</td>
+                                                    <td>
+                                                        <div>2017-12-22</div>
+                                                        <div>13.25.123</div>
+                                                    </td>
+                                                    <td>2017-12-22</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ORDER-000002</td>
+                                                    <td>31215123</td>
+                                                    <td class="text-muted">處理中</td>
+                                                    <td class="text-muted">處理中</td>
+                                                    <td>
+                                                        <div>2017-12-22</div>
+                                                        <div>13.25.123</div>
+                                                    </td>
+                                                    <td>2017-12-22</td>
+                                                </tr> 
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-info" data-dismiss="modal" style="width:80px;">取消</button>
+                                        <button type="button" class="btn color-b text-white" style="width:80px;">修改</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </td>
                     <td class="text-success">交易成功</td>
                     <td class="text-success">已出貨</td>
@@ -210,7 +346,7 @@
                     </td>
                     <td>2017-12-22</td>
                     <td>
-                        <button class="btn btn-purple-sm mt-1"onclick="javascript:location.href='/OrderRecords_Modify.html'" >修改狀態</button>
+                        <button class="btn btn-purple-sm mt-1" onclick="javascript:location.href='/OrderRecords_Modify.html'">修改狀態</button>
                         <button class="btn btn-red-sm mt-1">刪除</button>
                     </td>
                 </tr>
