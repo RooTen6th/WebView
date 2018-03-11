@@ -26,7 +26,7 @@
             }
 
         thead {
-            width: calc( 100% )
+            width: calc( 100% - 1em)
         }
     </style>
     <script>
@@ -176,7 +176,7 @@
                         <div class="col-5" style="padding:0px;">
                             <input type="text" readonly class="form-control-plaintext text-right" value="剩餘簡訊數量：">
                         </div>
-                        <div class="col-7" style="padding:0px;">
+                        <div class="col-7" style="padding-left:5px;">
                             <input type="text" class="form-control text-center" placeholder="簡訊數量">
                         </div>
                     </div>
@@ -187,7 +187,38 @@
                             <button type="button" class="btn btn-info" style="width:105px;">資料修改</button>
                         </div>
                         <div class="col-6" style="padding-left:18px">
-                            <button type="button" class="btn btn-info" style="width:105px;">密碼修改</button>
+                            <button type="button" class="btn btn-info" style="width:105px;" data-toggle="modal" data-target="#ChangePassword">密碼修改</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="ChangePassword" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top:10%;">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel" style="margin-left:35%;">管理者密碼修改</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row" style="margin-top:20px;">
+                                                <div style="width:45%; text-align:right; font-size:1.2em; margin-top:5px;">新密碼：</div>
+                                                <div style="width:35%;">
+                                                    <input type="text" class="form-control text-center" style="" placeholder="請輸入新密碼" />
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top:20px; margin-bottom:20px;">
+                                                <div style="width:45%; text-align:right; font-size:1.2em; margin-top:5px;">再次輸入新密碼：</div>
+                                                <div style="width:35%;">
+                                                    <input type="text" class="form-control text-center" style="" placeholder="請再次輸入新密碼" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-info" data-dismiss="modal" style="width:80px;">取消</button>
+                                            <button type="button" class="btn color-b text-white" style="width:100px;">確定修改</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -218,9 +249,9 @@
         <table class="table mt-3 tb">
             <thead class="thead-dark">
                 <tr>
+                    <th scope="col">會員編號</th>
                     <th scope="col">姓名</th>
                     <th scope="col">電話</th>
-                    <th scope="col">密碼</th>
                     <th scope="col">信箱</th>
                     <th scope="col">生日</th>
                     <th scope="col">註解</th>
@@ -230,9 +261,9 @@
             </thead>
             <tbody>
                 <tr>
+                    <td>000001</td>
                     <td>鄒年寶</td>
                     <td>0123456789</td>
-                    <td>3213131</td>
                     <td>123@gmail.com</td>
                     <td>2017-10-31</td>
                     <td>人不錯,很好...</td>
@@ -243,9 +274,9 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>000001</td>
                     <td>鄒年寶</td>
                     <td>0123456789</td>
-                    <td>3213131</td>
                     <td>123@gmail.com</td>
                     <td>2017-10-31</td>
                     <td>人不錯,很好...</td>
@@ -256,9 +287,9 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>000001</td>
                     <td>鄒年寶</td>
                     <td>0123456789</td>
-                    <td>3213131</td>
                     <td>123@gmail.com</td>
                     <td>2017-10-31</td>
                     <td>人不錯,很好...</td>
@@ -269,9 +300,9 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>000001</td>
                     <td>鄒年寶</td>
                     <td>0123456789</td>
-                    <td>3213131</td>
                     <td>123@gmail.com</td>
                     <td>2017-10-31</td>
                     <td>人不錯,很好...</td>
@@ -282,9 +313,9 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>000001</td>
                     <td>鄒年寶</td>
                     <td>0123456789</td>
-                    <td>3213131</td>
                     <td>123@gmail.com</td>
                     <td>2017-10-31</td>
                     <td>人不錯,很好...</td>
@@ -295,9 +326,9 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>000001</td>
                     <td>鄒年寶</td>
                     <td>0123456789</td>
-                    <td>3213131</td>
                     <td>123@gmail.com</td>
                     <td>2017-10-31</td>
                     <td>人不錯,很好...</td>
@@ -308,9 +339,9 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>000001</td>
                     <td>鄒年寶</td>
                     <td>0123456789</td>
-                    <td>3213131</td>
                     <td>123@gmail.com</td>
                     <td>2017-10-31</td>
                     <td>人不錯,很好...</td>
@@ -321,9 +352,9 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>000001</td>
                     <td>鄒年寶</td>
                     <td>0123456789</td>
-                    <td>3213131</td>
                     <td>123@gmail.com</td>
                     <td>2017-10-31</td>
                     <td>人不錯,很好...</td>
@@ -334,9 +365,9 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>000001</td>
                     <td>鄒年寶</td>
                     <td>0123456789</td>
-                    <td>3213131</td>
                     <td>123@gmail.com</td>
                     <td>2017-10-31</td>
                     <td>人不錯,很好...</td>
@@ -347,9 +378,9 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>000001</td>
                     <td>鄒年寶</td>
                     <td>0123456789</td>
-                    <td>3213131</td>
                     <td>123@gmail.com</td>
                     <td>2017-10-31</td>
                     <td>人不錯,很好...</td>
