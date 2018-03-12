@@ -125,7 +125,34 @@
                         <h5 style="padding:5px;">AAAAAA</h5>
                     </div>
                     <div class="col-6">
-                        <button type="button" class="btn btn-green-sm">修改</button>
+                        <button type="button" class="btn btn-green-sm" data-toggle="modal" data-target="#NameAndType_NameModify">修改</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="NameAndType_NameModify" tabindex="-1" role="dialog" aria-hidden="true" style="margin-top:15%;">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" style="margin-left:35%;">寵物名稱(修改)</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <span style="font-size:1.4em;width:35%;text-align:right;">修改前：</span>
+                                            <input type="text" class="form-control text-center " placeholder="AAAA" style="width:45%;" disabled />
+                                        </div>
+                                        <div class="row" style="margin-top:15px;">
+                                            <span style="font-size:1.4em;width:35%;text-align:right;">修改後：</span>
+                                            <input type="text" class="form-control text-center " placeholder="請輸入寵物名稱" style="width:45%;" />
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-info" data-dismiss="modal" style="width:80px;">取消</button>
+                                        <button type="button" class="btn color-b text-white" style="width:80px;">修改</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <button type="button" class="btn btn-red-sm">刪除</button>
                     </div>
                 </div>
@@ -154,7 +181,7 @@
                 </div>
                 <div class="row text-center mx-4" style="margin-top:10px;">
                     <div class="col-6">
-                        <h5 style="padding:5px;">寵物名稱</h5>
+                        <h5 style="padding:5px;">寵物類型</h5>
                     </div>
                     <div class="col-6">
                         <button type="button" class="btn btn-blue-lg">新增</button>
@@ -165,7 +192,34 @@
                         <h5 style="padding:5px;">AAAAAA</h5>
                     </div>
                     <div class="col-6">
-                        <button type="button" class="btn btn-green-sm">修改</button>
+                        <button type="button" class="btn btn-green-sm" data-toggle="modal" data-target="#NameAndType_TypeModify">修改</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="NameAndType_TypeModify" tabindex="-1" role="dialog" aria-hidden="true" style="margin-top:15%;">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" style="margin-left:35%;">寵物類型(修改)</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <span style="font-size:1.4em;width:35%;text-align:right;">修改前：</span>
+                                            <input type="text" class="form-control text-center " placeholder="AAAA" style="width:45%;" disabled />
+                                        </div>
+                                        <div class="row" style="margin-top:15px;">
+                                            <span style="font-size:1.4em;width:35%;text-align:right;">修改後：</span>
+                                            <input type="text" class="form-control text-center " placeholder="請輸入寵物類型" style="width:45%;" />
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-info" data-dismiss="modal" style="width:80px;">取消</button>
+                                        <button type="button" class="btn color-b text-white" style="width:80px;">修改</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <button type="button" class="btn btn-red-sm">刪除</button>
                     </div>
                 </div>
