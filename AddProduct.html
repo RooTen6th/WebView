@@ -28,11 +28,14 @@
         thead {
             width: calc( 100% - 1em )
         }
+
+
+
     </style>
     <script>
         $(function () {
             var vbody = $(document).height() - 320;
-            $('tbody').css({ "height": vbody });
+            $('#AddPruduct_table').css({ "height": vbody });
         });
     </script>
 </head>
@@ -40,7 +43,7 @@
     <div class="col-12">
         <div class="row bg-dark text-center" style="height:60px;">
             <div class="col-3  my-auto text-left" style="padding-left:30px;">
-                <a class="text-light h4" href="#">管理者介面</a>
+                <a class="text-light h4" href="/OrderRecords.html">管理者介面</a>
             </div>
             <div class="col-3 my-auto">
                 <div class="dropdown" style="float:right;margin-top:5px;">
@@ -84,6 +87,9 @@
                         <li>
                             <a class="dropdown-item" href="/Live.html">直播</a>
                         </li>
+                        <li>
+                            <a class="dropdown-item" href="/ClientList.html">客戶名單</a>
+                        </li>
                     </ul>
                 </div>
                 <div style="clear:both;"></div>
@@ -119,8 +125,12 @@
     </div>
     <div class="col-12" style="margin-top:15px;">
         <div style="border-radius: 5px; background-color: #d2d2d2;">
-            <div class="col-12 p-1">
-                <span>網站 &#62; 商店 &#62; 新增商品</span>
+            <div class="col-12 p-1 sm_title_a">
+                <span>網站 &#62; </span>
+                <span>
+                    <a href="/store.html">商店</a>
+                </span>
+                <span>&#62; 新增商品</span>
             </div>
         </div>
     </div>
@@ -151,26 +161,209 @@
                     <th scope="col">功能</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="AddPruduct_table">
                 <tr>
                     <td>00000</td>
                     <td>PD1233548</td>
                     <td>FFFF/SSSSS</td>
                     <td>AAAAAA</td>
                     <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
+                        <button type="button" class="btn btn-blue-sm w-100" data-toggle="modal" data-target="#AddProduct_image">顯示</button>
+                        <!-- Modal -->
+                        <div class="modal fade bd-example-modal-lg" id="AddProduct_image" tabindex="-1" role="dialog" aria-hidden="true" style="margin-top:5%;">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" style="margin-left:47%;">照片</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="/image01.jpg" style="width:100%;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </td>
                     <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
+                        <button type="button" class="btn btn-blue-sm w-100" data-toggle="modal" data-target="#AddProduct_remind">顯示</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="AddProduct_remind" tabindex="-1" role="dialog" aria-hidden="true" style="margin-top:5%;">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" style="margin-left:42%;">小提示</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div style="font-size:1.2em; margin-top:5px;">提示1</div>
+                                        <div style="font-size:1.2em; margin-top:5px;">提示2</div>
+                                        <div style="font-size:1.2em; margin-top:5px;">提示3</div>
+                                        <div style="font-size:1.2em; margin-top:5px;">提示4</div>
+                                        <div style="font-size:1.2em; margin-top:5px;">提示5</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </td>
                     <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
+                        <button type="button" class="btn btn-blue-sm w-100" data-toggle="modal" data-target="#AddProduct_buy">顯示</button>
+                        <!-- Modal -->
+                        <div class="modal fade bd-example-modal-lg" id="AddProduct_buy" tabindex="-1" role="dialog" aria-hidden="true" style="margin-top:5%;">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" style="margin-left:47%;">加購</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <table class="table table-hover  mb-4 tb">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">產品編號</th>
+                                                    <th scope="col">產品名稱</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody style="height:280px;">
+                                                <tr>
+                                                    <td>00000001</td>
+                                                    <td>name01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000001</td>
+                                                    <td>name01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000001</td>
+                                                    <td>name01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000001</td>
+                                                    <td>name01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000001</td>
+                                                    <td>name01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000001</td>
+                                                    <td>name01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000001</td>
+                                                    <td>name01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000001</td>
+                                                    <td>name01</td>
+                                                <tr>
+                                                    <td>00000001</td>
+                                                    <td>name01</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </td>
                     <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
+                        <button type="button" class="btn btn-blue-sm w-100" data-toggle="modal" data-target="#AddProduct_classification">顯示</button>
+                        <!-- Modal -->
+                        <div class="modal fade bd-example-modal-lg" id="AddProduct_classification" tabindex="-1" role="dialog" aria-hidden="true" style="margin-top:5%;">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" style="margin-left:47%;">分類</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <table class="table table-hover  mb-4 tb">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">產品編號</th>
+                                                    <th scope="col">產品名稱</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody style="height:280px;">
+                                                <tr>
+                                                    <td>00000001</td>
+                                                    <td>name01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000001</td>
+                                                    <td>name01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000001</td>
+                                                    <td>name01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000001</td>
+                                                    <td>name01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000001</td>
+                                                    <td>name01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000001</td>
+                                                    <td>name01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000001</td>
+                                                    <td>name01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00000001</td>
+                                                    <td>name01</td>
+                                                <tr>
+                                                    <td>00000001</td>
+                                                    <td>name01</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </td>
                     <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
+                        <button type="button" class="btn btn-blue-sm w-100" data-toggle="modal" data-target="#AddProduct_Narrative">顯示</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="AddProduct_Narrative" tabindex="-1" role="dialog" aria-hidden="true" style="margin-top:5%;">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" style="margin-left:45%;">敘述</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="border-bottom" style="padding-bottom:20px;">
+                                            <h5 class="text-center">產品1</h5>
+                                            <img src="image01.jpg" style="width:100%;" />
+                                        </div>
+                                        <div class="border-bottom" style="padding-bottom:20px;margin-top:15px;">
+                                            <h5 class="text-center">產品1</h5>
+                                            <img src="image01.jpg" style="width:100%;" />
+                                        </div>
+                                        <div style="margin-top:15px;">
+                                            <h5 class="text-center">產品1</h5>
+                                            <img src="image01.jpg" style="width:100%;" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </td>
                     <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
                     <td style="padding-left:0px; padding-right:0px;">

@@ -46,7 +46,7 @@
     <div class="col-12">
         <div class="row bg-dark text-center" style="height:60px;">
             <div class="col-3  my-auto text-left" style="padding-left:30px;">
-                <a class="text-light h4" href="#">管理者介面</a>
+                <a class="text-light h4" href="/OrderRecords.html">管理者介面</a>
             </div>
             <div class="col-3 my-auto">
                 <div class="dropdown" style="float:right;margin-top:5px;">
@@ -90,6 +90,9 @@
                         <li>
                             <a class="dropdown-item" href="/Live.html">直播</a>
                         </li>
+                        <li>
+                            <a class="dropdown-item" href="/ClientList.html">客戶名單</a>
+                        </li>
                     </ul>
                 </div>
                 <div style="clear:both;"></div>
@@ -125,8 +128,11 @@
     </div>
     <div class="col-12" style="margin-top:15px;">
         <div style="border-radius: 5px; background-color: #d2d2d2;">
-            <div class="col-12 p-1">
-                <span>網站 &#62; 交易紀錄</span>
+            <div class="col-12 p-1 sm_title_a">
+                <span>網站 &#62;</span>
+                <span>
+                    <a href="OrderRecords.html">交易紀錄</a>
+                </span>
             </div>
         </div>
     </div>
@@ -174,7 +180,7 @@
                             <div class="modal-dialog modal-lg" role="document" style="max-width:900px;">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title">商品顯示-ORDER000001</h4>
+                                        <h4 class="modal-title">訂單顯示-ORDER000001</h4>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -183,114 +189,61 @@
                                         <table class="table table-hover">
                                             <thead class="thead-dark">
                                                 <tr class="text-center">
-                                                    <th scope="col">訂單編號</th>
-                                                    <th scope="col">會員編號</th>
-                                                    <th scope="col">交易狀態</th>
-                                                    <th scope="col">商品狀態</th>
-                                                    <th scope="col">訂購時間</th>
-                                                    <th scope="col">抵達時間</th>
+                                                    <th scope="col">商品編號</th>
+                                                    <th scope="col">商品名稱</th>
+                                                    <th scope="col">商品數量</th>
+                                                    <th scope="col">商品總額</th>
                                                 </tr>
                                             </thead>
                                             <tbody id="modaltableheight">
                                                 <tr>
-                                                    <td>ORDER-000001</td>
-                                                    <td>132503131</td>
-                                                    <td class="text-success">交易成功</td>
-                                                    <td class="text-success">已出貨</td>
-                                                    <td>
-                                                        <div>2017-12-22</div>
-                                                        <div>13.25.123</div>
-                                                    </td>
-                                                    <td>2017-12-22</td>
+                                                    <td>PD-000001</td>
+                                                    <td>玫瑰花</td>
+                                                    <td>3</td>
+                                                    <td>300</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>ORDER-000002</td>
-                                                    <td>31215123</td>
-                                                    <td class="text-danger">交易失敗</td>
-                                                    <td class="text-danger">未出貨</td>
-                                                    <td>
-                                                        <div>2017-12-22</div>
-                                                        <div>13.25.123</div>
-                                                    </td>
-                                                    <td>2017-12-22</td>
+                                                    <td>PD-000001</td>
+                                                    <td>玫瑰花</td>
+                                                    <td>3</td>
+                                                    <td>300</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>ORDER-000002</td>
-                                                    <td>31215123</td>
-                                                    <td class="text-muted">處理中</td>
-                                                    <td class="text-muted">處理中</td>
-                                                    <td>
-                                                        <div>2017-12-22</div>
-                                                        <div>13.25.123</div>
-                                                    </td>
-                                                    <td>2017-12-22</td>
+                                                    <td>PD-000001</td>
+                                                    <td>玫瑰花</td>
+                                                    <td>3</td>
+                                                    <td>300</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>ORDER-000001</td>
-                                                    <td>132503131</td>
-                                                    <td class="text-success">交易成功</td>
-                                                    <td class="text-success">已出貨</td>
-                                                    <td>
-                                                        <div>2017-12-22</div>
-                                                        <div>13.25.123</div>
-                                                    </td>
-                                                    <td>2017-12-22</td>
+                                                    <td>PD-000001</td>
+                                                    <td>玫瑰花</td>
+                                                    <td>3</td>
+                                                    <td>300</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>ORDER-000002</td>
-                                                    <td>31215123</td>
-                                                    <td class="text-danger">交易失敗</td>
-                                                    <td class="text-danger">未出貨</td>
-                                                    <td>
-                                                        <div>2017-12-22</div>
-                                                        <div>13.25.123</div>
-                                                    </td>
-                                                    <td>2017-12-22</td>
+                                                    <td>PD-000001</td>
+                                                    <td>玫瑰花</td>
+                                                    <td>3</td>
+                                                    <td>300</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>ORDER-000002</td>
-                                                    <td>31215123</td>
-                                                    <td class="text-muted">處理中</td>
-                                                    <td class="text-muted">處理中</td>
-                                                    <td>
-                                                        <div>2017-12-22</div>
-                                                        <div>13.25.123</div>
-                                                    </td>
-                                                    <td>2017-12-22</td>
+                                                    <td>PD-000001</td>
+                                                    <td>玫瑰花</td>
+                                                    <td>3</td>
+                                                    <td>300</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>ORDER-000001</td>
-                                                    <td>132503131</td>
-                                                    <td class="text-success">交易成功</td>
-                                                    <td class="text-success">已出貨</td>
-                                                    <td>
-                                                        <div>2017-12-22</div>
-                                                        <div>13.25.123</div>
-                                                    </td>
-                                                    <td>2017-12-22</td>
+                                                    <td>PD-000001</td>
+                                                    <td>玫瑰花</td>
+                                                    <td>3</td>
+                                                    <td>300</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>ORDER-000002</td>
-                                                    <td>31215123</td>
-                                                    <td class="text-danger">交易失敗</td>
-                                                    <td class="text-danger">未出貨</td>
-                                                    <td>
-                                                        <div>2017-12-22</div>
-                                                        <div>13.25.123</div>
-                                                    </td>
-                                                    <td>2017-12-22</td>
+                                                    <td>PD-000001</td>
+                                                    <td>玫瑰花</td>
+                                                    <td>3</td>
+                                                    <td>300</td>
                                                 </tr>
-                                                <tr>
-                                                    <td>ORDER-000002</td>
-                                                    <td>31215123</td>
-                                                    <td class="text-muted">處理中</td>
-                                                    <td class="text-muted">處理中</td>
-                                                    <td>
-                                                        <div>2017-12-22</div>
-                                                        <div>13.25.123</div>
-                                                    </td>
-                                                    <td>2017-12-22</td>
-                                                </tr> 
                                             </tbody>
                                         </table>
                                     </div>

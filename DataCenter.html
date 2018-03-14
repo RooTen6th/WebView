@@ -40,7 +40,7 @@
     <div class="col-12">
         <div class="row bg-dark text-center" style="height:60px;">
             <div class="col-3  my-auto text-left" style="padding-left:30px;">
-                <a class="text-light h4" href="#">管理者介面</a>
+                <a class="text-light h4" href="/OrderRecords.html">管理者介面</a>
             </div>
             <div class="col-3 my-auto">
                 <div class="dropdown" style="float:right;margin-top:5px;">
@@ -84,6 +84,9 @@
                         <li>
                             <a class="dropdown-item" href="/Live.html">直播</a>
                         </li>
+                        <li>
+                            <a class="dropdown-item" href="/ClientList.html">客戶名單</a>
+                        </li>
                     </ul>
                 </div>
                 <div style="clear:both;"></div>
@@ -119,8 +122,11 @@
     </div>
     <div class="col-12" style="margin-top:15px;">
         <div style="border-radius: 5px; background-color: #d2d2d2;">
-            <div class="col-12 p-1">
-                <span>網站 &#62; 數據中心</span>
+            <div class="col-12 p-1 sm_title_a">
+                <span>網站 &#62;</span>
+                <span>
+                    <a href="DataCenter.html">數據中心</a>
+                </span>
             </div>
         </div>
     </div>
@@ -128,9 +134,15 @@
         <div class="row" style="margin-top:2%;">
             <div class="container form-inline">
                 <div class="col-6" style="height:100%;">
-                    <button type="button" class="btn btn-blue-sm my-2 mr-4 float-r" style="width:70px;">小時</button>
-                    <button type="button" class="btn btn-blue-sm my-2 m-2 float-r" style="width:70px;">天</button>
-                    <strong class="h4 m-2 float-r">網站人數：</strong>
+                    <div class="row">
+                        <div class="offset-4 col-5 text-right" style="padding:10px;">
+                            <strong class="h4">網站人數：</strong>
+                        </div>
+                        <div class="col-3" style="padding:0px;">
+                            <button type="button" class="btn btn-blue-sm my-2"onclick="javascript:location.href='/DataCenter_PeopleCount.html'">人數瀏覽</button>
+                        </div>
+
+                    </div>
                 </div>
                 <div class="col-6 form-inline" style="height:100%;">
                     <div class="" style="background-color:darkgray; width:2px; height:70%;"></div>

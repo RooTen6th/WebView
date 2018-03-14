@@ -17,7 +17,7 @@
     <div class="col-12">
         <div class="row bg-dark text-center" style="height:60px;">
             <div class="col-3  my-auto text-left" style="padding-left:30px;">
-                <a class="text-light h4" href="#">管理者介面</a>
+                <a class="text-light h4" href="/OrderRecords.html">管理者介面</a>
             </div>
             <div class="col-3 my-auto">
                 <div class="dropdown" style="float:right;margin-top:5px;">
@@ -61,6 +61,9 @@
                         <li>
                             <a class="dropdown-item" href="/Live.html">直播</a>
                         </li>
+                        <li>
+                            <a class="dropdown-item" href="/ClientList.html">客戶名單</a>
+                        </li>
                     </ul>
                 </div>
                 <div style="clear:both;"></div>
@@ -96,8 +99,12 @@
     </div>
     <div class="col-12" style="margin-top:15px;">
         <div style="border-radius: 5px; background-color: #d2d2d2;">
-            <div class="col-12 p-1">
-                <span>綠寵物 &#62; 部落格 &#62; 2017-01-11：13:25.315 (修改)</span>
+            <div class="col-12 p-1 sm_title_a">
+                <span>綠寵物 &#62;</span>
+                <span>
+                    <a href="OrderRecords.html">部落格</a>
+                </span>
+                <span>&#62; 2017-01-11：13:25.315 (修改)</span>
             </div>
         </div>
     </div>
@@ -112,7 +119,7 @@
                         <h5>發送屬性：</h5>
                     </div>
                     <div style="width:65%">
-                        <input type="text" class="form-control" placeholder="全體" disabled />
+                        <input type="text" class="form-control text-center" placeholder="全體" disabled />
                     </div>
                 </div>
             </div>
@@ -179,12 +186,13 @@
             </div>
             <div class="col-3">
                 <div style="float: right;">
-                    <button type="button" class="btn btn-blue-lg">確定修改</button>
+                    <button type="button" class="btn btn-red-sm">取消</button>
+                    <button type="button" class="btn btn-blue-sm">確定修改</button>
                 </div>
                 <div style="clear: both;"></div>
             </div>
         </div>
-        <div class="row" style="margin-top:5px; padding-right:52px;">
+        <div class="row" style="margin-top:5px; padding-right:55px;">
             <div class="col-12 text-right text-danger">此修改不會再次發出通知</div>
         </div>
     </div>

@@ -151,3 +151,11 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.sm_title_a a {
+    color: black;
+}
+
+    .sm_title_a a:hover {
+        color: #0066FF;
+    }
