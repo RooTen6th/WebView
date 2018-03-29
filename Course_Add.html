@@ -1,0 +1,388 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>凱特夫人.花.時尚-後台課程新增</title>
+    <!--boostrap jquery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--boostrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--boostrap js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--css-->
+    <link href="GreenPet.css" rel="stylesheet" />
+    <!--ico-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+<body>
+    <div class="col-12">
+        <div class="row bg-dark text-center" style="height:60px;">
+            <div class="col-3  my-auto text-left" style="padding-left:30px;">
+                <a class="text-light h4" href="/OrderRecords.html">管理者介面</a>
+            </div>
+            <div class="col-3 my-auto">
+                <div class="dropdown" style="float:right;margin-top:5px;">
+                    <div style="height:30px;">
+                        <a class="dropdown-toggle text-light h5" style="cursor: pointer;">網站</a>
+                    </div>
+                    <ul class="dropdown-menu dropdown-content" style="margin-top:0px;">
+                        <li>
+                            <a class="dropdown-item" href="/OrderRecords.html">交易紀錄</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/DataCenter.html">數據中心</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/ClientVoice.html">客戶聲音</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Carousel.html">輪播</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Writings.html">文章</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Course.html">課程</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/News.html">新聞</a>
+                        </li>
+                        <li class="btn-group text-center dropdown-submenu dropright">
+                            <a class="dropdown-item" href="" style="width:155px; text-align:left; cursor:context-menu;">
+                                商店
+                                <span class="dropdown-toggle" style="float:right;"></span>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-">
+                                <a class="dropdown-item" href="/store.html">商店</a>
+                                <a class="dropdown-item" href="/AddProduct.html">新增商品</a>
+                                <a class="dropdown-item" href="/AddProduct_Sup.html">協助消費者新增商品</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Live.html">直播</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/ClientList.html">客戶名單</a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="col-3 my-auto">
+                <div class="dropdown" style="float:left;margin-top:5px;">
+                    <div style="height:30px;">
+                        <a class="dropdown-toggle text-light h5" style="cursor: pointer;">綠寵物</a>
+                    </div>
+                    <ul class="dropdown-menu dropdown-content" style="margin-top:0px;">
+                        <li>
+                            <a class="dropdown-item" href="/ClickRate.html">點擊率</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Notice.html">通知</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Blog.html">部落格</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Group.html">固定群組</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/NameAndType.html">名稱與類型</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3 my-auto text-right" style="padding-right:30px;">
+                <a class="text-light h5" href="#">登出</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-12" style="margin-top:15px;">
+        <div style="border-radius: 5px; background-color: #d2d2d2;">
+            <div class="col-12 p-1 sm_title_a">
+                <span>網站 &#62;</span>
+                <span>
+                    <a href="Course.html">課程</a>
+                </span>
+                <span>&#62; 新增課程 </span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- 標題 -->
+            <div class="col-4" style="margin-top: 20px;">
+                <div class="form-group">
+                    <label>標題</label>
+                    <input type="text" class="form-control" id="iptitle" placeholder="輸入標題" value="" style="text-align: center;">
+                </div>
+            </div>
+            <!-- 課程檔期 -->
+            <div class="col-4" style="margin-top: 20px;">
+                <div class="form-group">
+                    <label>課程檔期</label>
+                    <div class="input-group">
+                        <select class="custom-select" id="SelectType" style="width: 100%;height: 35px;">
+                            <option value="0" selected disabled>選擇檔期</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- 價位 -->
+            <div class="col-4" style="margin-top: 20px;">
+                <div class="form-group">
+                    <label>價位</label>
+                    <input type="text" class="form-control" id="iptitle" placeholder="輸入價位" value="" style="text-align: center;">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- 敘述 -->
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">敘述</label>
+                    <button type="button" class="btn btn-blue-md w-100" data-toggle="modal" data-target="#Course_m_AddCourse">增加課程敘述</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="Course_m_AddCourse" tabindex="-1" role="dialog" aria-hidden="true" style="margin-top:5%;">
+                        <div class="modal-dialog" role="document" style="max-width:700px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" style="margin-left:47%;">
+                                        標題
+                                    </h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row" style="margin-top:20px;">
+                                        <div style="width:15%; text-align:right; padding-top:5px;">
+                                            <span style="font-size:1.2em;">標題：</span>
+                                        </div>
+                                        <div style="width:25%; padding-left:0px;">
+                                            <input type="text" class="form-control text-center" placeholder="標題1" disabled />
+                                        </div>
+                                        <div style="width:15%;padding-left:10px;">
+                                            <span class="input-group">
+                                                <select class="custom-select" id="inputGroupSelect01">
+                                                    <option selected disabled>類別</option>
+                                                    <option value="1">照片</option>
+                                                    <option value="2">影片</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                        <div style="width:30%;padding:0px 15px 0px 10px;">
+                                            <button type="button" class="btn text-white color-b w-100" style="height:38px;">選擇檔案</button>
+                                        </div>
+                                        <div style="width:15%;text-align:left;padding-top:0px;">
+                                            <button class="btn" style="background-color:white;">
+                                                <i class="fas fa-plus fa-lg text-success"></i>
+                                            </button>
+                                            <button class="btn" style="background-color:white;">
+                                                <i class="fas fa-minus fa-lg text-danger"></i>
+                                            </button>
+                                        </div>
+                                        <div class="border-bottom" style="width:90%;margin-left:5%;margin-top:20px;"></div>
+                                    </div>
+                                    <div class="row" style="margin-top:20px;">
+                                        <div style="width:15%; text-align:right; padding-top:5px;">
+                                            <span style="font-size:1.2em;">標題：</span>
+                                        </div>
+                                        <div style="width:25%; padding-left:0px;">
+                                            <input type="text" class="form-control text-center" placeholder="標題1" disabled />
+                                        </div>
+                                        <div style="width:15%;padding-left:10px;">
+                                            <span class="input-group">
+                                                <select class="custom-select" id="inputGroupSelect01">
+                                                    <option selected disabled>類別</option>
+                                                    <option value="1">照片</option>
+                                                    <option value="2">影片</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                        <div style="width:30%;padding:0px 15px 0px 10px;">
+                                            <input type="text" class="form-control text-center" placeholder="請輸入網址  " />
+                                        </div>
+                                        <div style="width:15%;text-align:left;padding-top:0px;">
+                                            <button class="btn" style="background-color:white;">
+                                                <i class="fas fa-plus fa-lg text-success"></i>
+                                            </button>
+                                            <button class="btn" style="background-color:white;">
+                                                <i class="fas fa-minus fa-lg text-danger"></i>
+                                            </button>
+                                        </div>
+                                        <div class="border-bottom" style="width:90%;margin-left:5%;margin-top:20px;"></div>
+                                    </div>
+                                    <div class="row" style="margin-top:20px;">
+                                        <div style="width:15%; text-align:right; padding-top:5px;">
+                                            <span style="font-size:1.2em;">標題：</span>
+                                        </div>
+                                        <div style="width:25%; padding-left:0px;">
+                                            <input type="text" class="form-control text-center" placeholder="標題1" disabled />
+                                        </div>
+                                        <div style="width:15%;padding-left:10px;">
+                                            <span class="input-group">
+                                                <select class="custom-select" id="inputGroupSelect01">
+                                                    <option selected disabled>類別</option>
+                                                    <option value="1">照片</option>
+                                                    <option value="2">影片</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                        <div style="width:30%;padding:0px 15px 0px 10px;">
+                                            <button type="button" class="btn text-white color-b w-100" style="height:38px;">選擇檔案</button>
+                                        </div>
+                                        <div style="width:15%;text-align:left;padding-top:0px;">
+                                            <button class="btn" style="background-color:white;">
+                                                <i class="fas fa-plus fa-lg text-success"></i>
+                                            </button>
+                                            <button class="btn" style="background-color:white;">
+                                                <i class="fas fa-minus fa-lg text-danger"></i>
+                                            </button>
+                                        </div>
+                                        <div class="border-bottom" style="width:90%;margin-left:5%;margin-top:20px;"></div>
+                                    </div>
+                                    <div class="row" style="margin-top:20px;">
+                                        <div style="width:15%; text-align:right; padding-top:5px;">
+                                            <span style="font-size:1.2em;">標題：</span>
+                                        </div>
+                                        <div style="width:25%; padding-left:0px;">
+                                            <input type="text" class="form-control text-center" placeholder="標題1" disabled />
+                                        </div>
+                                        <div style="width:15%;padding-left:10px;">
+                                            <span class="input-group">
+                                                <select class="custom-select" id="inputGroupSelect01">
+                                                    <option selected disabled>類別</option>
+                                                    <option value="1">照片</option>
+                                                    <option value="2">影片</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                        <div style="width:30%;padding:0px 15px 0px 10px;">
+                                            <input type="text" class="form-control text-center" placeholder="請輸入網址  " />
+                                        </div>
+                                        <div style="width:15%;text-align:left;padding-top:0px;">
+                                            <button class="btn" style="background-color:white;">
+                                                <i class="fas fa-plus fa-lg text-success"></i>
+                                            </button>
+                                            <button class="btn" style="background-color:white;">
+                                                <i class="fas fa-minus fa-lg text-danger"></i>
+                                            </button>
+                                        </div>
+                                        <div class="border-bottom" style="width:90%;margin-left:5%;margin-top:20px;"></div>
+                                    </div>
+                                    <div class="row" style="margin-top:20px;">
+                                        <div style="width:15%; text-align:right; padding-top:5px;">
+                                            <span style="font-size:1.2em;">標題：</span>
+                                        </div>
+                                        <div style="width:25%; padding-left:0px;">
+                                            <input type="text" class="form-control text-center" placeholder="標題1" disabled />
+                                        </div>
+                                        <div style="width:15%;padding-left:10px;">
+                                            <span class="input-group">
+                                                <select class="custom-select" id="inputGroupSelect01">
+                                                    <option selected disabled>類別</option>
+                                                    <option value="1">照片</option>
+                                                    <option value="2">影片</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                        <div style="width:30%;padding:0px 15px 0px 10px;">
+                                            <button type="button" class="btn text-white color-b w-100" style="height:38px;">選擇檔案</button>
+                                        </div>
+                                        <div style="width:15%;text-align:left;padding-top:0px;">
+                                            <button class="btn" style="background-color:white;">
+                                                <i class="fas fa-plus fa-lg text-success"></i>
+                                            </button>
+                                            <button class="btn" style="background-color:white;">
+                                                <i class="fas fa-minus fa-lg text-danger"></i>
+                                            </button>
+                                        </div>
+                                        <div class="border-bottom" style="width:90%;margin-left:5%;margin-top:20px;"></div>
+                                    </div>
+                                    <div class="row" style="margin-top:20px; margin-bottom:15px;">
+                                        <div style="width:15%; text-align:right; padding-top:5px;">
+                                            <span style="font-size:1.2em;">標題：</span>
+                                        </div>
+                                        <div style="width:25%; padding-left:0px;">
+                                            <input type="text" class="form-control text-center" placeholder="標題1" disabled />
+                                        </div>
+                                        <div style="width:15%;padding-left:10px;">
+                                            <span class="input-group">
+                                                <select class="custom-select" id="inputGroupSelect01">
+                                                    <option selected disabled>類別</option>
+                                                    <option value="1">照片</option>
+                                                    <option value="2">影片</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                        <div style="width:30%;padding:0px 15px 0px 10px;">
+                                            <input type="text" class="form-control text-center" placeholder="請輸入網址  " />
+                                        </div>
+                                        <div style="width:15%;text-align:left;padding-top:0px;">
+                                            <button class="btn" style="background-color:white;">
+                                                <i class="fas fa-plus fa-lg text-success"></i>
+                                            </button>
+                                            <button class="btn" style="background-color:white;">
+                                                <i class="fas fa-minus fa-lg text-danger"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-info" data-dismiss="modal" style="width:80px;">取消</button>
+                                    <button type="button" class="btn color-b text-white" style="width:100px;">確定修改</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 課程截止日 -->
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>課程截止日</label>
+                    <div class="input-group">
+                        <select class="custom-select" style="width: 100%;height: 35px;">
+                            <option value="0" selected disabled>選擇日期</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- 新增照片 -->
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="exampleInputFile">上傳照片</label><br />
+                    <img src="#" id="blah" style="width: 100%;">
+                    <input type="file" id="imgInp" accept="image/gif, image/jpeg, image/png" />
+                    <p class="help-block">提醒：尺寸 222x333</p>
+                </div>
+            </div>
+            <!-- 內容 -->
+            <div class="col-md-6">
+                <label>內文</label>
+                <textarea style="resize: none;" id="iparea" class="form-control" rows="3" maxlength="60" placeholder="輸入內文"></textarea>
+                <p class="help-block">提醒：最多60個字</p>
+                <!-- 按鈕區 -->
+                <div class="row">
+                    <div class="col-12" style="text-align: right;margin-bottom: 20px;">
+                        <button class="btn color-r text-white">取消</button>
+                        <button class="btn color-b text-white">新增</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

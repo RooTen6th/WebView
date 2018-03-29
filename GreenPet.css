@@ -159,3 +159,7 @@
     .sm_title_a a:hover {
         color: #0066FF;
     }
+
+span {
+    cursor: default;
+}
