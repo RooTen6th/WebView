@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>凱特夫人.花.時尚-後台客戶名單修改</title>
+    <title>凱特夫人.花.時尚-後台進階發送</title>
     <!--boostrap jquery-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <!--boostrap css-->
@@ -51,7 +51,6 @@
                                 商店
                                 <span class="dropdown-toggle" style="float:right;"></span>
                             </a>
-
                             <div class="dropdown-menu dropdown-">
                                 <a class="dropdown-item" href="/store.html">商店</a>
                                 <a class="dropdown-item" href="/AddProduct.html">新增商品</a>
@@ -100,16 +99,16 @@
     <div class="col-12" style="margin-top:15px;">
         <div style="border-radius: 5px; background-color: #d2d2d2;">
             <div class="col-12 p-1 sm_title_a">
-                <span>網站 &#62;</span>
+                <span>綠寵物 &#62;</span>
                 <span>
-                    <a href="ClientList.html">客戶名單</a>
+                    <a href="Notice.html">通知</a>
                 </span>
-                <span>&#62; 客戶名單修改</span>
+                <span>&#62; 標題(進階發送)</span>
             </div>
         </div>
     </div>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" style="margin-top: 10px;">
             <div class="col-3 border-right" style="margin-top:10px;">
                 <div class="text-center" style="margin-top:5px;">
                     <div class="row">
@@ -286,32 +285,58 @@
 
                 </div>
             </div>
-            <div class="col-9"  style="margin-top:8%;">
-                <div class="col-12 text-center">
-                    <h3>AAAAAAAAA ( 修改 )</h3>
-                </div>
-                <div class="col-8 offset-2">
-                    <h5>標題</h5>
-                </div>
-                <div class="col-8 offset-2">
-                    <input type="text" class="form-control" />
-                </div>
-                <div class="col-8 offset-2" style="margin-top:20px;">
-                    <h5>內文</h5>
-                </div>
-                <div class="col-8 offset-2">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" style="resize:none;"></textarea>
-                </div>
-                <div class="row" style="padding:10px;">
-                    <div class="col-4 offset-2">
-                        <span class="text-danger">1封最多70字，超過為2封計算</span>
-                    </div>
-                    <div class="col-4">
-                        <div style="float: right;">
-                            <button type="button" class="btn btn-red-sm">取消</button>
-                            <button type="button" class="btn btn-blue-md">確定修改</button>
+            <div class="col-9" style="margin-top:10px;">
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>標題</label>
+                            <input type="text" class="form-control" id="iptitle" placeholder="輸入標題" value="" style="text-align: center;">
                         </div>
-                        <div style="clear: both;"></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>類型</label>
+                            <input type="text" class="form-control" placeholder="" value="進階" disabled="disabled" style="text-align: center;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>連結</label>
+                            <input type="text" class="form-control" placeholder="輸入連結" value="" style="text-align: center;">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>註解</label>
+                            <input type="text" class="form-control" placeholder="輸入註解" value="" style="text-align: center;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- 新增照片 -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleInputFile">上傳照片</label><br />
+                            <img src="#" style="width: 100%;">
+                            <input type="file" id="imgInp" accept="image/gif, image/jpeg, image/png" />
+                            <p class="help-block">提醒：尺寸 222x333</p>
+                        </div>
+                    </div>
+                    <!-- 內容 -->
+                    <div class="col-md-6">
+                        <label>內文</label>
+                        <textarea style="resize: none;" id="iparea" class="form-control" rows="3" maxlength="60" placeholder="輸入內文"></textarea>
+                        <p class="help-block">提醒：最多60個字</p>
+                        <!-- 按鈕區 -->
+                        <div class="row">
+                            <div class="col-12" style="text-align: right;margin-bottom: 20px;">
+                                <button class="btn color-r text-white">取消</button>
+                                <button class="btn color-b text-white">新增</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
