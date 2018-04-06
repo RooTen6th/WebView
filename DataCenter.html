@@ -195,7 +195,36 @@
                 <div class="col-3">
                     <div class="row">
                         <div class="col-6" style="padding-left:35px">
-                            <button type="button" class="btn btn-info" style="width:105px;">資料修改</button>
+                            <button type="button" class="btn btn-info" style="width:105px;" data-toggle="modal" data-target="#ChangeData">資料修改</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="ChangeData" tabindex="-1" role="dialog" aria-hidden="true" style="margin-top:10%;">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" style="margin-left:30%;">管理者資料修改</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="offset-2 col-8">
+                                                <div class="form-group">
+                                                    <label>信箱</label>
+                                                    <input type="text" class="form-control" placeholder="請輸入信箱" value="" style="text-align: center;">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>手機</label>
+                                                    <input type="text" class="form-control" placeholder="請輸入手機號碼" value="" style="text-align: center;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn color-r text-white" data-dismiss="modal" style="width:80px;">取消</button>
+                                            <button type="button" class="btn color-b text-white" style="width:80px;">修改</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-6" style="padding-left:18px">
                             <button type="button" class="btn btn-info" style="width:105px;" data-toggle="modal" data-target="#ChangePassword">密碼修改</button>
@@ -210,22 +239,20 @@
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <div class="row" style="margin-top:20px;">
-                                                <div style="width:45%; text-align:right; font-size:1.2em; margin-top:5px;">新密碼：</div>
-                                                <div style="width:35%;">
-                                                    <input type="text" class="form-control text-center" style="" placeholder="請輸入新密碼" />
+                                            <div class="offset-2 col-8">
+                                                <div class="form-group">
+                                                    <label>新密碼</label>
+                                                    <input type="text" class="form-control" placeholder="請輸入新密碼" value="" style="text-align: center;">
                                                 </div>
-                                            </div>
-                                            <div class="row" style="margin-top:20px; margin-bottom:20px;">
-                                                <div style="width:45%; text-align:right; font-size:1.2em; margin-top:5px;">再次輸入新密碼：</div>
-                                                <div style="width:35%;">
-                                                    <input type="text" class="form-control text-center" style="" placeholder="請再次輸入新密碼" />
+                                                <div class="form-group">
+                                                    <label>再次輸入新密碼</label>
+                                                    <input type="text" class="form-control" placeholder="請再次輸入新密碼" value="" style="text-align: center;">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-info" data-dismiss="modal" style="width:80px;">取消</button>
-                                            <button type="button" class="btn color-b text-white" style="width:100px;">確定修改</button>
+                                            <button type="button" class="btn color-r text-white" data-dismiss="modal" style="width:80px;">取消</button>
+                                            <button type="button" class="btn color-b text-white" style="width:80px;">修改</button>
                                         </div>
                                     </div>
                                 </div>
