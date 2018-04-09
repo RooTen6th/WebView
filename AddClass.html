@@ -1,0 +1,494 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--boostrap jquery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--boostrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--boostrap js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--css-->
+    <link href="GreenPet.css" rel="stylesheet" />
+    <!--ico-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+<body>
+    <div class="col-12">
+        <div class="row bg-dark text-center" style="height:60px;">
+            <div class="col-3  my-auto text-left" style="padding-left:30px;">
+                <a class="text-light h4" href="/OrderRecords.html">管理者介面</a>
+            </div>
+            <div class="col-3 my-auto">
+                <div class="dropdown" style="float:right;margin-top:5px;">
+                    <div style="height:30px;">
+                        <a class="dropdown-toggle text-light h5" style="cursor: pointer;">網站</a>
+                    </div>
+                    <ul class="dropdown-menu dropdown-content" style="margin-top:0px;">
+                        <li>
+                            <a class="dropdown-item" href="/OrderRecords.html">交易紀錄</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/DataCenter.html">數據中心</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/ClientVoice.html">客戶聲音</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Carousel.html">輪播</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Writings.html">文章</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Course.html">課程</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/News.html">新聞</a>
+                        </li>
+                        <li class="btn-group text-center dropdown-submenu dropright">
+                            <a class="dropdown-item" href="" style="width:155px; text-align:left; cursor:context-menu;">
+                                商店
+                                <span class="dropdown-toggle" style="float:right;"></span>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-">
+                                <a class="dropdown-item" href="/store.html">商店</a>
+                                <a class="dropdown-item" href="/AddProduct.html">新增商品</a>
+                                <a class="dropdown-item" href="/AddProduct_Sup.html">協助消費者新增商品</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Live.html">直播</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/ClientList.html">客戶名單</a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="col-3 my-auto">
+                <div class="dropdown" style="float:left;margin-top:5px;">
+                    <div style="height:30px;">
+                        <a class="dropdown-toggle text-light h5" style="cursor: pointer;">綠寵物</a>
+                    </div>
+                    <ul class="dropdown-menu dropdown-content" style="margin-top:0px;">
+                        <li>
+                            <a class="dropdown-item" href="/ClickRate.html">點擊率</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Notice.html">通知</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Blog.html">部落格</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Group.html">固定群組</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/NameAndType.html">名稱與類型</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3 my-auto text-right" style="padding-right:30px;">
+                <a class="text-light h5" href="#">登出</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-12" style="margin-top:15px;">
+        <div style="border-radius: 5px; background-color: #d2d2d2;">
+            <div class="col-12 p-1 sm_title_a">
+                <span>網站 &#62;</span>
+                <span>
+                    <a href="store.html">商店</a>
+                    &#62;
+                    <a href="Class.html">分類</a>
+                </span>
+                <span>&#62; 新增</span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 border-right" style="margin-top:15px;">
+                <div class="text-center" style="margin-top:10px;">
+                    <h5 style="margin-top:7px;">所有商品</h5>
+                </div>
+                <div style="overflow-y: scroll; height:70vh; margin-top:10px;">
+                    <div class="col-12" style="margin-top:10px;">
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-10 offset-1 my-1">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" />
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-10 offset-1 my-1">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" />
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-10 offset-1 my-1">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" />
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-10 offset-1 my-1">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" />
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-10 offset-1 my-1">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" />
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-10 offset-1 my-1">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" />
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-10 offset-1 my-1">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" />
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-10 offset-1 my-1">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" />
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-10 offset-1 my-1">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" />
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-10 offset-1 my-1">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" />
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-10 offset-1 my-1">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" />
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-10 offset-1 my-1">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" />
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-10 offset-1 my-1">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" />
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-10 offset-1 my-1">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" />
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-10 offset-1 my-1">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" />
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-10 offset-1 my-1">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" />
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-10 offset-1 my-1">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="checkbox" />
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:20px;">
+                    <div class="col-6  text-right">
+                        <button class="btn btn-block btn-info">全部取消</button>
+                    </div>
+                    <div class="col-6">
+                        <button class="btn btn-block color-r text-white">全部鎖定</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9" style="margin-top:6%;">
+                <div class="col-8 offset-2">
+                    <h5>標題</h5>
+                </div>
+                <div class="col-8 offset-2">
+                    <input type="text" class="form-control" />
+                </div>
+                <div class="col-8 offset-2" style="margin-top:10px;">
+                    <h5>標籤</h5>
+                </div>
+                <div class="col-8 offset-2">
+                    <input type="text" class="form-control" />
+                </div>
+                <div class="col-8 offset-2" style="margin-top:20px;">
+                    <h5>已鎖定加購商品</h5>
+                </div>
+                <div class="col-8 offset-2" style="height:400px; overflow-y:scroll;">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-group" style="margin-top:10px;">
+                                <input type="text" class="form-control text-center" value="商品名稱" disabled>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="padding:10px;">
+                    <div class="col-10 text-right">
+                        <button type="button" class="btn btn-red-sm">取消</button>
+                        <button type="button" class="btn btn-blue-md">新增</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

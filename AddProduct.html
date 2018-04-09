@@ -28,9 +28,6 @@
         thead {
             width: calc( 100% - 1em )
         }
-
-
-
     </style>
     <script>
         $(function () {
@@ -134,591 +131,158 @@
             </div>
         </div>
     </div>
-    <div class="col-12" style="margin-top:40px;">
-        <div class="row" style="padding-right:15px;">
-            <div class="col-12 text-right">
-                <button type="button" class="btn btn-blue-md">單筆新增</button>
+    <div class="container-fluid">
+        <div class="row" style="margin-top:15px;">
+            <div class="col-4 offset-4">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>大項</label>
+                            <div class="input-group">
+                                <select class="custom-select" style="width: 100%;height: 35px;">
+                                    <option value="0" selected disabled>選擇大項</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>小項</label>
+                            <select class="custom-select" style="width: 100%;height: 35px;">
+                                <option value="0" selected disabled>選擇小項</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>名稱</label>
+                            <input type="text" class="form-control" id="iptitle" placeholder="輸入名稱" value="" style="text-align: center;">
+                        </div>
+                        <div class="form-group">
+                            <label>價位</label>
+                            <input type="text" class="form-control" id="iptitle" placeholder="輸入價位" value="" style="text-align: center;">
+                        </div>
+                        <div class="form-group">
+                            <label>紅利</label>
+                            <input type="text" class="form-control" id="iptitle" placeholder="輸入紅利" value="" style="text-align: center;">
+                        </div>
+                        <div class="form-group">
+                            <label>庫存</label>
+                            <input type="text" class="form-control" id="iptitle" placeholder="輸入庫存" value="" style="text-align: center;">
+                        </div>
+                        <div class="form-group">
+                            <label>上架時間</label>
+                            <input type="text" class="form-control" id="iptitle" placeholder="輸入上架時間" value="" style="text-align: center;">
+                        </div>
+                        <div class="form-group" style="margin-top:20px;">
+                            <label for="exampleInputFile">上傳照片</label><br />
+                            <img src="#" id="blah" style="width: 100%;">
+                            <input type="file" id="imgInp" accept="image/gif, image/jpeg, image/png" />
+                            <p class="help-block">提醒：尺寸 222x333</p>
+                        </div>
+                        <div class="form-group">
+                            <label>小提示</label>
+                            <div>
+                                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#Add_Point" style=" vertical-align:middle; height:40px;padding-left:0px;padding-right:0px;">小提示1</button>
+                                <button type="button" class="btn btn-link" style=" vertical-align:middle; height:40px;">小提示2</button>
+                                <button type="button" class="btn btn-link" style=" vertical-align:middle; height:40px;">小提示3</button>
+                                <button type="button" class="btn btn-link" style=" vertical-align:middle; height:40px;">小提示4</button>
+                                <button type="button" class="btn btn-link" style=" vertical-align:middle; height:40px;">小提示5</button>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="Add_Point" tabindex="-1" role="dialog" aria-hidden="true" style="margin-top:5%;">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" style="margin-left:37%;">新增小提示</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <div class="form-group">
+                                                    <label>小提示</label>
+                                                    <input type="text" class="form-control" id="iptitle" placeholder="輸入小提示" value="" style="text-align: center;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>加購</label>
+                            <div>
+                                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#Add_Buy" style=" vertical-align:middle; height:40px;padding-left:0px;padding-right:0px;">加購1</button>
+                                <button type="button" class="btn btn-link" style=" vertical-align:middle; height:40px;">加購2</button>
+                                <button type="button" class="btn btn-link" style=" vertical-align:middle; height:40px;">加購3</button>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="Add_Buy" tabindex="-1" role="dialog" aria-hidden="true" style="margin-top:5%;">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" style="margin-left:40%;">新增加購</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <div class="form-group">
+                                                    <label>加購</label>
+                                                    <input type="text" class="form-control" id="iptitle" placeholder="輸入加購" value="" style="text-align: center;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>分類</label>
+                            <div>
+                                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#ClientList_Display" style=" vertical-align:middle; height:40px;padding-left:0px;padding-right:0px;">分類1</button>
+                                <button type="button" class="btn btn-link" style=" vertical-align:middle; height:40px;">分類2</button>
+                                <button type="button" class="btn btn-link" style=" vertical-align:middle; height:40px;">分類3</button>
+                                <button type="button" class="btn btn-link" style=" vertical-align:middle; height:40px;">分類4</button>
+                                <button type="button" class="btn btn-link" style=" vertical-align:middle; height:40px;">分類5</button>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="ClientList_Display" tabindex="-1" role="dialog" aria-hidden="true" style="margin-top:5%;">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" style="margin-left:40%;">新增分類</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <div class="form-group">
+                                                    <label>分類</label>
+                                                    <input type="text" class="form-control" id="iptitle" placeholder="輸入分類" value="" style="text-align: center;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom:20px;">
+                    <div class="col-12 text-right">
+                        <button class="btn color-r text-white">取消</button>
+                        <button class="btn color-b text-white">新增</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-12" style="margin-bottom: 20px; margin-top:20px;">
-        <table class="table table-hover  mb-4 tb">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">排序</th>
-                    <th scope="col">編號</th>
-                    <th scope="col">大項/小項</th>
-                    <th scope="col">名稱</th>
-                    <th scope="col">照片</th>
-                    <th scope="col">小提示</th>
-                    <th scope="col">加購</th>
-                    <th scope="col">分類</th>
-                    <th scope="col">敘述</th>
-                    <th style="padding-left:0px; padding-right:0px; width:140px;">
-                        <span>價位/庫存/紅利</span>
-                    </th>
-                    <th scope="col">上架時間</th>
-                    <th scope="col">功能</th>
-                </tr>
-            </thead>
-            <tbody id="AddPruduct_table">
-                <tr>
-                    <td>00000</td>
-                    <td>PD1233548</td>
-                    <td>FFFF/SSSSS</td>
-                    <td>AAAAAA</td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100" data-toggle="modal" data-target="#AddProduct_image">顯示</button>
-                        <!-- Modal -->
-                        <div class="modal fade bd-example-modal-lg" id="AddProduct_image" tabindex="-1" role="dialog" aria-hidden="true" style="margin-top:5%;">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title" style="margin-left:47%;">照片</h4>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="/image01.jpg" style="width:100%;" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100" data-toggle="modal" data-target="#AddProduct_remind">顯示</button>
-                        <!-- Modal -->
-                        <div class="modal fade" id="AddProduct_remind" tabindex="-1" role="dialog" aria-hidden="true" style="margin-top:5%;">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title" style="margin-left:42%;">小提示</h4>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body text-center">
-                                        <div style="font-size:1.2em; margin-top:5px;">提示1</div>
-                                        <div style="font-size:1.2em; margin-top:5px;">提示2</div>
-                                        <div style="font-size:1.2em; margin-top:5px;">提示3</div>
-                                        <div style="font-size:1.2em; margin-top:5px;">提示4</div>
-                                        <div style="font-size:1.2em; margin-top:5px;">提示5</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100" data-toggle="modal" data-target="#AddProduct_buy">顯示</button>
-                        <!-- Modal -->
-                        <div class="modal fade bd-example-modal-lg" id="AddProduct_buy" tabindex="-1" role="dialog" aria-hidden="true" style="margin-top:5%;">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title" style="margin-left:47%;">加購</h4>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <table class="table table-hover  mb-4 tb">
-                                            <thead class="thead-dark">
-                                                <tr>
-                                                    <th scope="col">產品編號</th>
-                                                    <th scope="col">產品名稱</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody style="height:280px;">
-                                                <tr>
-                                                    <td>00000001</td>
-                                                    <td>name01</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>00000001</td>
-                                                    <td>name01</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>00000001</td>
-                                                    <td>name01</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>00000001</td>
-                                                    <td>name01</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>00000001</td>
-                                                    <td>name01</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>00000001</td>
-                                                    <td>name01</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>00000001</td>
-                                                    <td>name01</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>00000001</td>
-                                                    <td>name01</td>
-                                                <tr>
-                                                    <td>00000001</td>
-                                                    <td>name01</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100" data-toggle="modal" data-target="#AddProduct_classification">顯示</button>
-                        <!-- Modal -->
-                        <div class="modal fade bd-example-modal-lg" id="AddProduct_classification" tabindex="-1" role="dialog" aria-hidden="true" style="margin-top:5%;">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title" style="margin-left:47%;">分類</h4>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <table class="table table-hover  mb-4 tb">
-                                            <thead class="thead-dark">
-                                                <tr>
-                                                    <th scope="col">產品編號</th>
-                                                    <th scope="col">產品名稱</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody style="height:280px;">
-                                                <tr>
-                                                    <td>00000001</td>
-                                                    <td>name01</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>00000001</td>
-                                                    <td>name01</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>00000001</td>
-                                                    <td>name01</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>00000001</td>
-                                                    <td>name01</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>00000001</td>
-                                                    <td>name01</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>00000001</td>
-                                                    <td>name01</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>00000001</td>
-                                                    <td>name01</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>00000001</td>
-                                                    <td>name01</td>
-                                                <tr>
-                                                    <td>00000001</td>
-                                                    <td>name01</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100" data-toggle="modal" data-target="#AddProduct_Narrative">顯示</button>
-                        <!-- Modal -->
-                        <div class="modal fade" id="AddProduct_Narrative" tabindex="-1" role="dialog" aria-hidden="true" style="margin-top:5%;">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title" style="margin-left:45%;">敘述</h4>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="border-bottom" style="padding-bottom:20px;">
-                                            <h5 class="text-center">產品1</h5>
-                                            <img src="image01.jpg" style="width:100%;" />
-                                        </div>
-                                        <div class="border-bottom" style="padding-bottom:20px;margin-top:15px;">
-                                            <h5 class="text-center">產品1</h5>
-                                            <img src="image01.jpg" style="width:100%;" />
-                                        </div>
-                                        <div style="margin-top:15px;">
-                                            <h5 class="text-center">產品1</h5>
-                                            <img src="image01.jpg" style="width:100%;" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
-                    <td style="padding-left:0px; padding-right:0px;">
-                        <span> 2017-12-14</span>
-                        <span>
-                            13:00
-                        </span>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>00000</td>
-                    <td>PD1233548</td>
-                    <td>FFFF/SSSSS</td>
-                    <td>AAAAAA</td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
-                    <td style="padding-left:0px; padding-right:0px;">
-                        <span> 2017-12-14</span>
-                        <span>
-                            13:00
-                        </span>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>00000</td>
-                    <td>PD1233548</td>
-                    <td>FFFF/SSSSS</td>
-                    <td>AAAAAA</td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
-                    <td style="padding-left:0px; padding-right:0px;">
-                        <span> 2017-12-14</span>
-                        <span>
-                            13:00
-                        </span>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>00000</td>
-                    <td>PD1233548</td>
-                    <td>FFFF/SSSSS</td>
-                    <td>AAAAAA</td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
-                    <td style="padding-left:0px; padding-right:0px;">
-                        <span> 2017-12-14</span>
-                        <span>
-                            13:00
-                        </span>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>00000</td>
-                    <td>PD1233548</td>
-                    <td>FFFF/SSSSS</td>
-                    <td>AAAAAA</td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
-                    <td style="padding-left:0px; padding-right:0px;">
-                        <span> 2017-12-14</span>
-                        <span>
-                            13:00
-                        </span>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>00000</td>
-                    <td>PD1233548</td>
-                    <td>FFFF/SSSSS</td>
-                    <td>AAAAAA</td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
-                    <td style="padding-left:0px; padding-right:0px;">
-                        <span> 2017-12-14</span>
-                        <span>
-                            13:00
-                        </span>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>00000</td>
-                    <td>PD1233548</td>
-                    <td>FFFF/SSSSS</td>
-                    <td>AAAAAA</td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
-                    <td style="padding-left:0px; padding-right:0px;">
-                        <span> 2017-12-14</span>
-                        <span>
-                            13:00
-                        </span>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>00000</td>
-                    <td>PD1233548</td>
-                    <td>FFFF/SSSSS</td>
-                    <td>AAAAAA</td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
-                    <td style="padding-left:0px; padding-right:0px;">
-                        <span> 2017-12-14</span>
-                        <span>
-                            13:00
-                        </span>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>00000</td>
-                    <td>PD1233548</td>
-                    <td>FFFF/SSSSS</td>
-                    <td>AAAAAA</td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
-                    <td style="padding-left:0px; padding-right:0px;">
-                        <span> 2017-12-14</span>
-                        <span>
-                            13:00
-                        </span>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>00000</td>
-                    <td>PD1233548</td>
-                    <td>FFFF/SSSSS</td>
-                    <td>AAAAAA</td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
-                    <td style="padding-left:0px; padding-right:0px;">
-                        <span> 2017-12-14</span>
-                        <span>
-                            13:00
-                        </span>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>00000</td>
-                    <td>PD1233548</td>
-                    <td>FFFF/SSSSS</td>
-                    <td>AAAAAA</td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
-                    <td style="padding-left:0px; padding-right:0px;">
-                        <span> 2017-12-14</span>
-                        <span>
-                            13:00
-                        </span>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>00000</td>
-                    <td>PD1233548</td>
-                    <td>FFFF/SSSSS</td>
-                    <td>AAAAAA</td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-blue-sm w-100">顯示</button>
-                    </td>
-                    <td style="padding-left:0px; padding-right:0px;width:140px;">2580/200/3</td>
-                    <td style="padding-left:0px; padding-right:0px;">
-                        <span> 2017-12-14</span>
-                        <span>
-                            13:00
-                        </span>
-                    </td>
-                    <td style="padding-left:15px; padding-right:15px;">
-                        <button type="button" class="btn btn-red-sm w-100">刪除</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
     </div>
 </body>
 </html>
