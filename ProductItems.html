@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>名稱與類型</title>
+    <title></title>
     <!--boostrap jquery-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <!--boostrap css-->
@@ -99,10 +99,11 @@
     <div class="col-12" style="margin-top:15px;">
         <div style="border-radius: 5px; background-color: #d2d2d2;">
             <div class="col-12 p-1 sm_title_a">
-                <span>綠寵物 &#62;</span>
+                <span>網站 &#62;</span>
                 <span>
-                    <a href="NameAndType.html">名稱與類型</a>
+                    <a href="store.html">商店</a>
                 </span>
+                <span>&#62; 商品大項與小項</span>
             </div>
         </div>
     </div>
@@ -111,7 +112,7 @@
             <div class="col-6 border-right">
                 <div class="row text-center  border-bottom mx-4" style="margin-top:20px; padding-bottom:9px;">
                     <div class="col-6">
-                        <h3>寵物類型</h3>
+                        <h3>商品大項</h3>
                     </div>
                     <div class="col-6">
                         <h3>功能</h3>
@@ -119,24 +120,24 @@
                 </div>
                 <div class="row text-center mx-4" style="margin-top:10px;">
                     <div class="col-6">
-                        <h5 style="padding:5px;">寵物類型</h5>
+                        <h5 style="padding:5px;">商品大項</h5>
                     </div>
                     <div class="col-6">
-                        <button type="button" class="btn btn-blue-lg" data-toggle="modal" data-target="#NameAndType_TypeAdd">新增</button>
+                        <button type="button" class="btn btn-blue-lg" data-toggle="modal" data-target="#BigItems">新增</button>
                         <!--Modal-->
-                        <div class="modal fade" id="NameAndType_TypeAdd" tabindex="-1" role="dialog" aria-hidden="true" style="margin-top:5%;">
+                        <div class="modal fade" id="BigItems" tabindex="-1" role="dialog" aria-hidden="true" style="margin-top:5%;">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title" style="margin-left:35%;">新增寵物類型</h4>
+                                        <h4 class="modal-title" style="margin-left:35%;">新增商品大項</h4>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
                                     <div class="modal-body">
                                         <div class="row" style="margin-top:10px;margin-bottom:10px;">
-                                            <span style="font-size:1.4em;width:35%;text-align:right;">寵物類型：</span>
-                                            <input type="text" class="form-control text-center " placeholder="輸入寵物類型" style="width:45%;" />
+                                            <span style="font-size:1.4em;width:35%;text-align:right;">商品大項：</span>
+                                            <input type="text" class="form-control text-center " placeholder="輸入商品大項" style="width:45%;" />
                                         </div>
                                     </div>
                                     <div class="modal-footer">
@@ -159,7 +160,7 @@
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title" style="margin-left:35%;">修改寵物類型</h4>
+                                        <h4 class="modal-title" style="margin-left:35%;">修改商品大項</h4>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -171,7 +172,7 @@
                                         </div>
                                         <div class="row" style="margin-top:15px;">
                                             <span style="font-size:1.4em;width:35%;text-align:right;">修改後：</span>
-                                            <input type="text" class="form-control text-center " placeholder="輸入寵物類型" style="width:45%;" />
+                                            <input type="text" class="form-control text-center " placeholder="輸入商品大項" style="width:45%;" />
                                         </div>
                                     </div>
                                     <div class="modal-footer">
@@ -188,11 +189,11 @@
             <div class="col-6">
                 <div class="row text-center" style="margin-top:20px; padding-bottom:10px;">
                     <div class="col-5 text-right" style="padding-right:5px;">
-                        <h3>選擇寵物類型：</h3>
+                        <h3>選擇商品大項：</h3>
                     </div>
                     <div class="col-7 text-left" style="padding: 0 45px 0 0px;">
                         <select class="custom-select">
-                            <option selected disabled>名稱與類型</option>
+                            <option selected disabled>商品大項</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
@@ -201,7 +202,7 @@
                 </div>
                 <div class="row text-center border-bottom border-top mx-4">
                     <div class="col-6">
-                        <h5 style="padding:5px;">寵物名稱</h5>
+                        <h5 style="padding:5px;">商品小項</h5>
                     </div>
                     <div class="col-6">
                         <h5 style="padding:5px;">功能</h5>
@@ -209,7 +210,7 @@
                 </div>
                 <div class="row text-center mx-4" style="margin-top:10px;">
                     <div class="col-6">
-                        <h5 style="padding:5px;">寵物名稱</h5>
+                        <h5 style="padding:5px;">商品小項</h5>
                     </div>
                     <div class="col-6">
                         <button type="button" class="btn btn-blue-lg" data-toggle="modal" data-target="#NameAndType_NameAdd">新增</button>
@@ -218,31 +219,19 @@
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title" style="margin-left:35%;">新增寵物名稱</h4>
+                                        <h4 class="modal-title" style="margin-left:35%;">新增商品小項</h4>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
                                     <div class="modal-body">
                                         <div class="row">
-                                            <span style="font-size:1.4em;width:35%;text-align:right;">寵物類型：</span>
+                                            <span style="font-size:1.4em;width:35%;text-align:right;">商品大項：</span>
                                             <input type="text" class="form-control text-center " placeholder="AAAA" style="width:45%;" disabled />
                                         </div>
                                         <div class="row" style="margin-top:15px;">
-                                            <span style="font-size:1.4em;width:35%;text-align:right;">寵物名稱：</span>
-                                            <input type="text" class="form-control text-center " placeholder="輸入寵物名稱" style="width:45%;" />
-                                        </div>
-                                        <div class="row" style="margin-top:15px;">
-                                            <span style="font-size:1.4em;width:35%;text-align:right;">濕度：</span>
-                                            <input type="text" class="form-control text-center " placeholder="輸入濕度" style="width:45%;" />
-                                        </div>
-                                        <div class="row" style="margin-top:15px;">
-                                            <span style="font-size:1.4em;width:35%;text-align:right;">室內溫度：</span>
-                                            <input type="text" class="form-control text-center " placeholder="輸入室內溫度" style="width:45%;" />
-                                        </div>
-                                        <div class="row" style="margin-top:15px;">
-                                            <span style="font-size:1.4em;width:35%;text-align:right;">溫度：</span>
-                                            <input type="text" class="form-control text-center " placeholder="輸入溫度" style="width:45%;" />
+                                            <span style="font-size:1.4em;width:35%;text-align:right;">商品小項：</span>
+                                            <input type="text" class="form-control text-center " placeholder="輸入商品小項" style="width:45%;" />
                                         </div>
                                     </div>
                                     <div class="modal-footer">
@@ -265,7 +254,7 @@
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title" style="margin-left:35%;">修改寵物名稱</h4>
+                                        <h4 class="modal-title" style="margin-left:35%;">修改商品小項</h4>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -277,19 +266,7 @@
                                         </div>
                                         <div class="row" style="margin-top:15px;">
                                             <span style="font-size:1.4em;width:35%;text-align:right;">修改後：</span>
-                                            <input type="text" class="form-control text-center " placeholder="輸入寵物名稱" style="width:45%;" />
-                                        </div>
-                                        <div class="row" style="margin-top:15px;">
-                                            <span style="font-size:1.4em;width:35%;text-align:right;">濕度：</span>
-                                            <input type="text" class="form-control text-center " placeholder="輸入濕度" style="width:45%;" />
-                                        </div>
-                                        <div class="row" style="margin-top:15px;">
-                                            <span style="font-size:1.4em;width:35%;text-align:right;">室內溫度：</span>
-                                            <input type="text" class="form-control text-center " placeholder="輸入室內溫度" style="width:45%;" />
-                                        </div>
-                                        <div class="row" style="margin-top:15px;">
-                                            <span style="font-size:1.4em;width:35%;text-align:right;">溫度：</span>
-                                            <input type="text" class="form-control text-center " placeholder="輸入溫度" style="width:45%;" />
+                                            <input type="text" class="form-control text-center " placeholder="請輸入商品小項" style="width:45%;" />
                                         </div>
                                     </div>
                                     <div class="modal-footer">
