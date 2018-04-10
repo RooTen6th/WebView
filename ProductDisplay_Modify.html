@@ -109,73 +109,57 @@
                     &#62;
                     <a href="Store_Modify.html">商店修改</a>
                 </span>
-                <span>&#62; 加購修改</span>
+                <span>&#62; 敘述修改</span>
             </div>
         </div>
     </div>
-    <div class="col-4 offset-4">
+    <div class="col-6 offset-3"style="margin-top:20px;">
         <div class="row">
             <div class="col-6">
-                <div class="form-group" style="margin-top:20px;">
+                <div class="form-group">
                     <strong>修改前</strong>
-                </div>
-                <div class="form-group">
-                    <label>加購1</label>
-                    <input type="text" class="form-control" placeholder="加購1" style="text-align: center;" disabled>
-                </div>
-                <div class="form-group">
-                    <label>加購2</label>
-                    <input type="text" class="form-control" placeholder="加購2" style="text-align: center;" disabled>
-                </div>
-                <div class="form-group">
-                    <label>加購3</label>
-                    <input type="text" class="form-control" placeholder="加購3" style="text-align: center;" disabled>
+                    <div style="margin-top:10px;">
+                        <label>照片</label>
+                        <img src="image01.jpg" style="width: 100%;"><br />
+                    </div>
                 </div>
             </div>
-            <div class="col-6">
-                <div class="form-group" style="margin-top:20px;">
+            <div class="col-6 border-left">
+                <div class="form-group">
                     <strong>修改後</strong>
-                </div>
-                <div class="form-group">
-                    <label>加購1</label>
-                    <div class="input-group">
-                        <select class="custom-select">
-                            <option value="0" selected disabled>選擇加購</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
+                    <div>
+                        <button class="btn btn-link" style="padding-left:0px;padding-right:0px;"data-toggle="modal" data-target="#imagemodify">修改敘述</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="imagemodify" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top:10%;">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel" style="margin-left:40%;">修改敘述</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <div class="form-group">
+                                                <label>標題</label>
+                                                <input type="text" class="form-control" id="iptitle" placeholder="輸入標題" value="" style="text-align: center;">
+                                            </div>
+                                            <div class="form-group">
+                                                <img src="#" id="blah" style="width: 100%;">
+                                                <input type="file" id="imgInp" accept="image/gif, image/jpeg, image/png" />
+                                                <p class="help-block">提醒：尺寸 222x333</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn color-r text-white" data-dismiss="modal" style="width:80px;">取消</button>
+                                        <button type="button" class="btn color-b text-white" style="width:80px;">修改</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label>加購2</label>
-                    <div class="input-group">
-                        <select class="custom-select">
-                            <option value="0" selected disabled>選擇加購</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>加購3</label>
-                    <div class="input-group">
-                        <select class="custom-select">
-                            <option value="0" selected disabled>選擇加購</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12" style="margin-top:20px;">
-                <div class="text-right">
-                    <button type="button" class="btn color-r text-white">取消</button>
-                    <button type="button" class="btn color-b text-white">修改</button>
                 </div>
             </div>
         </div>
